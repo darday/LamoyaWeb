@@ -9,15 +9,18 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-color: rgba(246, 235, 229, 0.673);
+
     /* background-color: red; */
 }
 /* FinCarousel */
 
 @media (min-width:801px)  {
     .carousel-item {
-        height: 100vh !important ;
+        height: 89vh !important ;
     }
 }
+
 
 
 /***********Texto sobre Imagen***************/

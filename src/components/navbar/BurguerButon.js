@@ -5,17 +5,18 @@ export const BurguerButon = (props) => {
   return (
     <Burguer>
         <div onClick={props.handleClick} className={`icon nav-icon-5 ${props.clicked ? 'open':''}`}>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span style={{backgroundColor:'rgb(19 76 65)'}}></span>
+            <span style={{backgroundColor:'rgb(19 76 65)'}}></span>
+            <span style={{backgroundColor:'rgb(19 76 65)'}}></span>
         </div>
     </Burguer>
   )
 }
 
 const Burguer = styled.div`
-
+    
     .nav-icon-5{
+        z-index: 2;
         width: 35px;
         height: 30px;
         margin: 10px 10px;
