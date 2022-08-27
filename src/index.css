@@ -1,10 +1,11 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: dosis-medium;
 }
 
 code {
@@ -15,6 +16,7 @@ code {
 .color-seleccionado{
   color:#ee833b !important
 }
+
 
 .imgfondo{
   width: 100%;
@@ -227,3 +229,21 @@ display: block;
   font-family:Sans-Serif;
 }
 }
+
+@font-face {
+  font-family:dosis-light ;
+  src: url(../public/assets/fonts/DOSIS-LIGHT.TTF) format('truetype');
+}
+@font-face {
+  font-family:dosis-medium ;
+  src: url(../public/assets/fonts/DOSIS-MEDIUM.TTF) format('truetype');
+}
+@font-face {
+  font-family:dosis-bold ;
+  src: url(../public/assets/fonts/DOSIS-BOLD.TTF) format('truetype');
+}
+@font-face {
+  font-family:dosis-extra-bold ;
+  src: url(../public/assets/fonts/DOSIS-EXTRABOLD_[ALLFONT.ES].TTF) format('truetype');
+}
+
