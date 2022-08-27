@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { FaHome } from "react-icons/fa";
-
 import styled from 'styled-components'
 import { BurguerButon } from './BurguerButon'
 
@@ -45,14 +44,14 @@ export const NavBarScreen = () => {
       }
   }
 
-
   return (
         <>
             <NavContainer>
-                <h2>La <span>Moya</span></h2>
+                 {/* <span>Moya</span></h2> */}
+                <img src={"./assets/images/logos/logo-color.png"} width="200vw" height="auto" alt=""></img>
                 <div className={`links ${clicked ?'active':''}`}>
                     {/* <a className='selection-word' href='/'><FaHome/> Inicio</a> */}
-                    <a className={`selection-word ${(localStorage.getItem("menu")==1)  && 'color-seleccionado'} `} href='/' onClick={()=>menuSeleccionado(1)} > Inicio</a>
+                    <a className={`selection-word  ${(localStorage.getItem("menu")==1)  && 'color-seleccionado'} `} href='/' onClick={()=>menuSeleccionado(1)} > Inicio</a>
                     <a className={`selection-word ${(localStorage.getItem("menu")==2)  && 'color-seleccionado'} `} href='/gastronomia'  onClick={()=>menuSeleccionado(2)} >Gastronomia</a>                    <a className='selection-word' href='/'>Cuyes</a>
                     <a className='selection-word' href='/'>Proyectos</a>
                     <a className='selection-word' href='/'>Galeria</a>
@@ -69,6 +68,10 @@ export const NavBarScreen = () => {
 }
 
 const NavContainer = styled.nav`
+a{
+  font-size: 1.4rem !important;
+}
+
 h2{
     color: rgb(19 76 65);
     font-weight: 400;
@@ -106,7 +109,7 @@ h2{
       font-size: 1rem;
       display: block;
     }
-    @media(min-width: 768px){
+    @media(min-width: 700px){
       position: initial;
       margin: 0;
       a{
@@ -125,7 +128,7 @@ h2{
     margin-left: auto;
     margin-right: auto;
     top: 12%;
-    left: 32%;
+    left: 22%;
     right: 0;
     text-align: center;
     a{
@@ -135,7 +138,7 @@ h2{
     }
   }
   .burguer{
-    @media(min-width: 768px){
+    @media(min-width: 700px){
       display: none;
     }
   }
@@ -157,6 +160,6 @@ const BgDiv = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 42%;
+    height: 50%;
   }
 `

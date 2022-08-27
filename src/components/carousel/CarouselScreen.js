@@ -12,7 +12,7 @@ export const CarouselScreen = () => {
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div className="carousel-inner">
-                <div className="carousel-item active" data-bs-interval="4000"  style={{backgroundImage:`url('./assets/images/carousel/banner1.jpeg')`}}>
+                <div className="carousel-item active" data-bs-interval="4000"  style={{backgroundImage:`url('./assets/images/carousel/banner1w.png')`}}>
                     <div >
                         {/* <div className="text_cent_img camping-letters animate__animated animate__fadeInLeft "><h1 className="tit-sob-img" >CAMPING CHIMBORAZO</h1></div>
                         <div className="text_cent_img2 animate__animated animate__fadeInRight "><p className="tit-sob-img2" style={{color:"white"}}>La aventura está en el camino</p></div> */}
