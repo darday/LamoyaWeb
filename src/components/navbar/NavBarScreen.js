@@ -52,10 +52,12 @@ export const NavBarScreen = () => {
                 <div className={`links ${clicked ?'active':''}`}>
                     {/* <a className='selection-word' href='/'><FaHome/> Inicio</a> */}
                     <a className={`selection-word  ${(localStorage.getItem("menu")==1)  && 'color-seleccionado'} `} href='/' onClick={()=>menuSeleccionado(1)} > Inicio</a>
-                    <a className={`selection-word ${(localStorage.getItem("menu")==2)  && 'color-seleccionado'} `} href='/gastronomia'  onClick={()=>menuSeleccionado(2)} >Gastronomia</a>                    <a className='selection-word' href='/'>Cuyes</a>
-                    <a className='selection-word' href='/'>Proyectos</a>
-                    <a className='selection-word' href='/'>Galeria</a>
-                    <a className='selection-word' href='/'>Contactos</a>
+                    <a className={`selection-word ${(localStorage.getItem("menu")==2)  && 'color-seleccionado'} `} href='/gastronomia'  onClick={()=>menuSeleccionado(2)} >Gastronomia</a>                    
+                    <a className={`selection-word ${(localStorage.getItem("menu")==3)  && 'color-seleccionado'} `} href='/cuyes'  onClick={()=>menuSeleccionado(3)} >Cuyes</a>                    
+                    <a className={`selection-word ${(localStorage.getItem("menu")==4)  && 'color-seleccionado'} `} href='/proyectos'  onClick={()=>menuSeleccionado(4)} >Proyectos</a>                   
+                    <a className={`selection-word ${(localStorage.getItem("menu")==5)  && 'color-seleccionado'} `} href='/galeria'  onClick={()=>menuSeleccionado(5)} >Galeria</a>                   
+                    <a className={`selection-word ${(localStorage.getItem("menu")==6)  && 'color-seleccionado'} `} href='/contactos'  onClick={()=>menuSeleccionado(6)} >Contactos</a>                   
+                    
                 </div>
                 <div className='burguer'>
                     <BurguerButon clicked={clicked} handleClick={handleClick}/>

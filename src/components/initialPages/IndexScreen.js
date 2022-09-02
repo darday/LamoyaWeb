@@ -1,5 +1,6 @@
 import React from 'react'
 import { CarouselScreen } from '../carousel/CarouselScreen'
+import { FooterScreen } from '../footer/FooterScreen';
 import { NavBarScreen } from '../navbar/NavBarScreen'
 
 export const IndexScreen = () => {
@@ -10,10 +11,13 @@ export const IndexScreen = () => {
         <NavBarScreen/>
         <CarouselScreen/>
         {/* <img src= { `./assets/img/index1.png` } width="100%" height= 'auto'></img> */}
-        <div className='imgfondo'>
+
+        {/* pantalla grande */}
+
+        <div className='imgfondo index-pg-info'>
           <div className='container'>
              <div style={{ paddingBottom: '5vh'}}>
-              <div className='row'>
+              <div className='row '>
                 <div className='col-12 col-sm-6'>
                   <div className="tittle-moya">
                     <img src= { `./assets/img/titulomoya.png`} width='80%'></img>
@@ -37,10 +41,44 @@ export const IndexScreen = () => {
                   </div>
                 </div>
               </div>
+
+              
             </div> 
           </div>
         </div>
+        {/* fin de pantalla grande */}
 
+        {/* pantalla pequenia */}
+
+        <div style={{backgroundImage:`url('./assets/images/movil/fondo1-min.png')`}}>
+          <div className='row index-pp-info' style={{paddingTop:'5vh', paddingBottom:'5vh'}}>
+            <div className='col-12 col-sm-12'>
+              <div className="text-center">
+                <img src= { `./assets/img/titulomoya.png`} width='50%'></img>
+              </div>                           
+            </div>
+            <div className='col-12 col-sm-12'>
+              <div className="container text-center">   
+              <br></br>
+ 
+                <p style={{color:'white'}}>Turismo comunitario es aquel en el que abrimos las puertas de nuestras
+                  casas, compartimos nuestros conocimientos ancestrales, ofertamos
+                  experiencias auténticas, y contacto directo con la naturaleza. 
+                </p>   
+                <p  style={{color:'white'}}>  
+                  La Moya está ubicada a 20 minutos de la ciudad de Riobamba, en la
+                  provincia de Chimborazo, somos una comunidad de origen Puruha,
+                  ofertamos servicios de alimentación y hospedaje, disponemos de
+                  habitaciones, valoramos el rescate de la cultura, estamos orgullosos de
+                  nuestras costumbres y nos gusta compartirlas con quienes nos visitan.
+                </p>               
+              </div>
+            </div>
+          </div>
+
+        </div>
+        {/* fin de pantalla pequenia */}
+        
         <div>
           <img src= { `./assets/img/index2.jpeg` } width="100%" height= 'auto'></img>
         </div> 
@@ -49,10 +87,19 @@ export const IndexScreen = () => {
           <div style={{ paddingBottom: '5vh'}}>
             <div className='row'>
               <div className='col-12 col-sm-6' >
-              <a href={"/pack1"}><div className='pack-moya'><img src= { `./assets/img/index2a.png` } style={{ paddingTop: '5vh'}}></img></div></a> 
+                
+                <div className='text-center'>
+                  <a href={"/pack1"}>
+                    <img src= { `./assets/img/index2a.png` }  style={{ paddingTop: '5vh', width:'60%'}}></img>
+                  </a> 
+                </div>
               </div>
               <div className='col-12 col-sm-6'>
-              <a href={"/pack2"}><div className='pack-moya1'><img src= { `./assets/img/index2b.png` } style={{ paddingTop: '5vh'}}></img></div></a>
+                <div className='text-center'>
+                  <a href={"/pack2"}>
+                      <img src= { `./assets/img/index2b.png` } style={{ paddingTop: '5vh',  width:'60%'}}></img>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -62,6 +109,9 @@ export const IndexScreen = () => {
           <center><img src= { `./assets/img/index2c.png` } width="2 0%" height= 'auto'></img></center>
         </div> 
 
+      {/* pantallas grande */}
+
+      <div className='index-pg-visit'>
         <div className='container'>
          <center><h1 style={{color: '#09302b', fontSize: '2.5rem', textAlign: 'center' }}>LUGARES A VISITAR SI ESTAS CERCA DE LA MOYA</h1></center>
           <div style={{ paddingBottom: '0vh' }}>
@@ -100,6 +150,55 @@ export const IndexScreen = () => {
             </div>
           </div>
         </div>
+      </div>
+
+
+      {/* fin de pantalla grande */}
+
+      {/* pantalla pequenia */}
+
+      <div className='index-pp-visit'>
+        <div className='container'>
+          <h1 style={{color: '#09302b', fontSize: '2.5rem', textAlign: 'center' }}>LUGARES A VISITAR SI ESTAS CERCA DE LA MOYA</h1>
+
+          <div style={{ paddingBottom: '5vh'}}>
+            <div className='row'>
+              <div className='col-12 col-sm-6' >
+                <div className='text-center'>
+                  <img src= { `./assets/img/index3.jpeg` } style={{ paddingTop: '1vh', width:'90%'}}></img>
+                </div>
+                <div className='icon-visit'><img src= { `./assets/img/iconindex3a.png` }></img></div>
+              </div>
+              <div className='col-12 col-sm-6'>
+                <div className='text-center'>
+                  <img src= { `./assets/img/index4.jpeg` } style={{ paddingTop: '1vh', width:'90%'}}></img>
+                </div>
+                <div className='icon-visit'><img src= { `./assets/img/iconindex4a.png` }></img></div>
+              </div>
+
+              <div className='col-12 col-sm-6' >
+                <div className='text-center'>
+                  <img src= { `./assets/img/index5.jpeg` } style={{ paddingTop: '1vh', width:'90%'}}></img>
+                </div>
+                <div className='icon-visit'><img src= { `./assets/img/iconindex5a.png` }></img></div>
+              </div>
+              <div className='col-12 col-sm-6'>
+                <div className='text-center'>
+                  <img src= { `./assets/img/index6.jpeg` } style={{ paddingTop: '1vh', width:'90%'}}></img>
+                </div>
+                <div className='icon-visit'><img src= { `./assets/img/iconindex6a.png` }></img></div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
+
+
+
+
+      {/* fin de pantalla pequenia */}
 
         {/* <div>
           <img src= { `./assets/img/index7.jpeg` } width="100%" height= 'auto'></img>
@@ -197,6 +296,12 @@ export const IndexScreen = () => {
         </div> 
 
         <center><img src= { `./assets/img/index13.png` } className='paquetemoya' width="45%" height= 'auto'></img></center>  */}
+    
+    
+        <FooterScreen/>
+    
+    
+    
     </>
   )
 }
