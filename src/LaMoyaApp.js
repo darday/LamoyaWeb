@@ -4,10 +4,10 @@ import { GastronomiaScreen } from './components/initialPages/GastronomiaScreen'
 import { IndexScreen } from './components/initialPages/IndexScreen'
 import { IndexPack1Screen } from './components/initialPages/IndexPack1Screen'
 import { IndexPack2Screen } from './components/initialPages/IndexPack2Screen'
-import { GaleriaScreen } from './components/initialPages/GaleriaScreen'
 import { ContactosScreen } from './components/initialPages/ContactosScreen'
 import { CuyesScreen } from './components/initialPages/CuyesScreen'
 import { ProyectosScreen } from './components/initialPages/ProyectosScreen'
+import { GaleriaScreen } from './components/gallery/GaleriaScreen'
 export const LaMoyaApp = () => {
   return (
 

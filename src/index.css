@@ -52,8 +52,8 @@ code {
   }
 } */
 
-.index-pg-info{
-
+.contacts-form{
+  width: 60%;
 }
 
 .index-pp-info{
@@ -86,6 +86,10 @@ code {
     
     top:40%;
     left: 20%;
+  }
+
+  .contacts-form{
+    width: 100%;
   }
 }
 
@@ -131,6 +135,10 @@ code {
     font-family:dosis-medium;
 
   }
+}
+
+a:hover.selection-word{
+  color:#ee833b !important
 }
 
 .paquetedia1{
