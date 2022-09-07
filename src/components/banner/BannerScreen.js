@@ -5,7 +5,7 @@ import './banner.css';
 export const BannerScreen = () => {
   return (
     <>
-      <div id="carouselExampleIndicators" className="carousel slide" style={{zIndex:'0'}} data-bs-ride="true">
+      <div id="carouselExampleIndicators" className="carousel slide" style={{zIndex:'0', paddingTop:'10vh'}} data-bs-ride="true">
             
             <div className="carousel-inner">
                 <div className="carousel-item active slider" data-bs-interval="4000"  style={{backgroundImage:`url('./assets/images/carousel/banner4.jpeg')`}}>

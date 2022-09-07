@@ -19,8 +19,8 @@ export const IndexPack2Screen = () => {
         <center><img src= { `./assets/img/index13.png` } className='paquetemoya' width="45%" height= 'auto'></img></center> 
 
         <div  className='container'>
-          <h1 style={{ textAlign: 'center', paddingTop: '2vh', fontSize: '4rem', color:'#09302b', fontFamily: 'Sans-Serif' }}><b>DÍA 1</b></h1>
-          <div style={{ fontFamily: 'Sans-Serif', textAlign: 'center', fontSize: '2rem', paddingLeft: '15%', paddingRight: '15%', paddingBottom: '10vh', color:'#09302b' }}>
+          <h1 style={{ textAlign: 'center', paddingTop: '2vh', fontSize: '4rem', color:'#09302b', }}><b>DÍA 1</b></h1>
+          <div className='texto-pack' >
             4:00 Check inn, caminata, visita
             museo iglesia, tiempo libre.
           </div>
@@ -31,8 +31,8 @@ export const IndexPack2Screen = () => {
         </div>
 
         <div  className='container'>
-          <h1 style={{ textAlign: 'center', paddingTop: '10vh', fontSize: '3rem', color:'#09302b', fontFamily: 'Sans-Serif' }}>8:00</h1>
-          <div style={{ fontFamily: 'Sans-Serif', textAlign: 'center', fontSize: '2rem', paddingLeft: '15%', paddingRight: '15%', paddingBottom: '10vh', color:'#09302b' }}>
+          <h1 style={{ textAlign: 'center', paddingTop: '10vh', fontSize: '3rem', color:'#09302b', }}>8:00</h1>
+          <div className='texto-pack' >
             Canelazo y fogata, cena y pernoctar.
           </div>
         </div>
@@ -42,8 +42,8 @@ export const IndexPack2Screen = () => {
         </div>
 
         <div  className='container'>
-          <h1 style={{ textAlign: 'center', paddingTop: '10vh', fontSize: '4rem', color:'#09302b', fontFamily: 'Sans-Serif' }}><b>DÍA 2</b></h1>
-          <div style={{ fontFamily: 'Sans-Serif', textAlign: 'center', fontSize: '2rem', paddingLeft: '15%', paddingRight: '15%', paddingBottom: '10vh', color:'#09302b' }}>
+          <h1 style={{ textAlign: 'center', paddingTop: '10vh', fontSize: '4rem', color:'#09302b', }}><b>DÍA 2</b></h1>
+          <div className='texto-pack' >
             08:00 desayuno y check out.
           </div>
         </div>
@@ -51,10 +51,10 @@ export const IndexPack2Screen = () => {
         <div className='container'>
           <div style={{ paddingBottom: '10vh'}}>
             <div className='row'>
-              <div className='col-12 col-sm-6'>
-                <center><img src= { `./assets/img/iconindex12.png` } ></img></center>
-                <h1 style={{ fontFamily: 'Sans-Serif', textAlign: 'center', paddingTop: '10vh', fontSize: '5vh', color:'#09302b' }}><b>INCLUYE:</b></h1>
-                <div style={{ fontFamily: 'Sans-Serif', textAlign: 'justify', fontSize: '3.5vh', paddingLeft: '15%', paddingRight: '15%', color:'#09302b' }}>
+              <div className='col-12 col-sm-6' style={{paddingBottom:'2vh'}}>
+                <center><img src= { `./assets/img/iconindex12.png` } width='23%'></img></center>
+                <h1 style={{  textAlign: 'center', paddingTop: '5vh', fontSize: '5vh', color:'#09302b' }}><b>INCLUYE:</b></h1>
+                <div className='texto-pack' >
                   <div >
                         <b>-</b> Ingreso al museo.
                   </div>
@@ -89,7 +89,7 @@ export const IndexPack2Screen = () => {
         </div>
 
         <center><img src= { `./assets/img/packmoyamapa4.png` } width='10%'></img></center>
-        <h1 style={{ fontFamily: 'Sans-Serif', textAlign: 'center', paddingTop: '3vh', fontSize: '5vh', color:'#09302b' }}><b>ENCUÉNTRANOS EN</b></h1>
+        <h1 style={{  textAlign: 'center', paddingTop: '3vh', fontSize: '5vh', color:'#09302b' }}><b>ENCUÉNTRANOS EN</b></h1>
         
         <div className='container' style={{ paddingTop: '5vh', paddingBottom: '5vh', paddingLeft: '10%', paddingRight: '10%' }}>
           <center><MapsScreen/></center>

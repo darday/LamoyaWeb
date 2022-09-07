@@ -5,7 +5,7 @@ import { FaHome } from "react-icons/fa";
 export const CarouselScreen = () => {
   return (
     <>
-        <div id="carouselExampleIndicators" className="carousel slide" style={{zIndex:'0'}} data-bs-ride="true">
+        <div id="carouselExampleIndicators" className="carousel slide" style={{zIndex:'0', paddingTop:'8vh'}} data-bs-ride="true">
             <div className="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>

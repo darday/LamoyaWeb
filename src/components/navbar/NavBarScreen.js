@@ -46,9 +46,12 @@ export const NavBarScreen = () => {
 
   return (
         <>
-            <NavContainer>
+            <NavContainer className='fixed-top'>
                  {/* <span>Moya</span></h2> */}
-                <img src={"./assets/images/logos/logo-color.png"} width="200vw" height="auto" alt=""></img>
+                <a className={`selection-word  ${(localStorage.getItem("menu")==1)  && 'color-seleccionado'} `} href='/' onClick={()=>menuSeleccionado(1)} > 
+                  <img src={"./assets/images/logos/logo-color.png"} width="190vw" height="auto" alt=""></img>
+                </a>
+
                 <div className={`links ${clicked ?'active':''}`}>
                     {/* <a className='selection-word' href='/'><FaHome/> Inicio</a> */}
                     <a className={`selection-word  ${(localStorage.getItem("menu")==1)  && 'color-seleccionado'} `} href='/' onClick={()=>menuSeleccionado(1)} > Inicio</a>
@@ -81,6 +84,12 @@ h2{
       font-weight: bold;
     }
   }
+  /* z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0; */
+  height: 11vh;
   padding-left: 7% !important;
   padding-right: 7% !important;
   padding: 1rem;
@@ -129,7 +138,7 @@ h2{
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 12%;
+    top: 11vh;
     left: 22%;
     right: 0;
     text-align: center;
@@ -162,6 +171,6 @@ const BgDiv = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 50vh;
   }
 `

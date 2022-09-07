@@ -10,6 +10,7 @@ export const IndexScreen = () => {
     <>
         <NavBarScreen/>
         <CarouselScreen/>
+        
         {/* <img src= { `./assets/img/index1.png` } width="100%" height= 'auto'></img> */}
 
         {/* pantalla grande */}

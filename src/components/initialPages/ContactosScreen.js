@@ -9,36 +9,45 @@ export const ContactosScreen = () => {
   return (
     <>
         <NavBarScreen/>
-        <div className='container' style={{ paddingTop: '10vh', paddingBottom: '10vh' }}>
+        <div className='container text-center'  style={{ paddingTop: '18vh', paddingBottom: '10vh', width:'80%' }}>
           <div className='row'>
-            <div className='col-12 col-sm-6' style={{paddingBottom:'5vh'}}>
+            <div className='col-12 col-sm-6' style={{paddingBottom:'7vh'}}>
               <h1 className='titulos-grandes-directora' style={{ color:'#4d5480' }}>CONTACTOS</h1>
-                <div style={{ textAlign: 'justify', paddingTop: '5vh', paddingBottom: '3vh', color: '#666666', fontSize: '1rem' }}>
-                  Estamos ubicados a 20 minutos de la ciudad de Riobamba
+                
+                <div style={{ textAlign: 'center', paddingBottom: '7vh', color: '#666666', fontSize: '1.1rem' }}>
+                  Estamos ubicados a 20 minutos de la ciudad de Riobamba.
                 </div>
-                <div style={{ color: '#666666', textAlign: 'Justify', fontSize: '1rem' }}>
+                <div style={{ color: '#666666', textAlign: 'center', fontSize: '1.1rem' }}>
                   <b>Reservaciones:</b>  <a href= 'https://walink.co/f3a001' target="_blank" style={{textDecoration:'none', color:'gray'}} className="selection-word" >+593 998752686</a>
                 </div>
-                <div style={{ color: '#666666', textAlign: 'Justify', fontSize: '1rem' }}>
+                <div style={{ color: '#666666', textAlign: 'center', fontSize: '1.1rem' }}>
                   <b>Operaciones:</b>  <a href= 'https://walink.co/9e2e79' target="_blank" style={{textDecoration:'none', color:'gray'}} className="selection-word">+593 987608055</a>
                 </div>
-                <div style={{ color: '#666666', textAlign: 'Justify', fontSize: '1rem' }}>
+                <div style={{ color: '#666666', textAlign: 'center', fontSize: '1.1rem' }}>
                   <b>Link contacto directo:</b> <a href= 'https://walink.co/f3a001' target="_blank" style={{textDecoration:'none', color:'gray'}} className="selection-word">Click Aquí!</a> 
                 </div>
-                <div style={{ color: '#666666', textAlign: 'Justify', fontSize: '1rem' }}>
+                <div style={{ color: '#666666', textAlign: 'center', fontSize: '1.1rem' }}>
                   <b>Facebook:</b> <a href= 'https://www.facebook.com/lamoya.moya.98' target="_blank" style={{textDecoration:'none', color:'gray'}} className="selection-word">Comuna La Moya</a>
                 </div>
-                <div style={{ color: '#666666', textAlign: 'Justify', fontSize: '1rem' }}>
+                <div style={{ color: '#666666', textAlign: 'center', fontSize: '1.1rem' }}>
                   <b>Email:</b> comuna_lamoya@hotmail.com
                 </div> 
             </div>
-            <div className='col-12 col-sm-6'  width='50%'>
+            <div className='col-12 col-sm-6' style={{paddingBottom:'5vh!important'}} width='50%'>
               
               <h1 className='titulos-grandes-directora' style={{ color:'#4d5480' }}>UBICACIÓN</h1>
+              <center>
                 <MapsScreen/>
+
+              </center>
             </div>
           </div>
         </div>
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
 
         <div className='container contacts-form'>
           <h1 className='text-center'>Ponte en contacto, Escríbenos!</h1>
@@ -60,15 +69,19 @@ export const ContactosScreen = () => {
               </div>
             </div>
             <div className=''> 
-            <div class="mb-3">
-              <label  class="form-label">Escribe aquí tu mensaje:</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            <div className="mb-3">
+              <label  className="form-label">Escribe aquí tu mensaje:</label>
+              <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
             </div>
             </div>
-            <button type="submit" className="btn btn-primary">Enviar mensaje</button>
+            <button type="submit" className="btn btn-primary" style={{BackgroundColor:'#ee833b !important'}}>Enviar mensaje</button>
           </form>
         </div>
 
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
 
         <FooterScreen/>    
     </>

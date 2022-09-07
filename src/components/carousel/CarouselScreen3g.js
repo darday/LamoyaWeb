@@ -2,7 +2,7 @@ import React from 'react'
 
 export const CarouselScreen3g = () => {
   return (
-    <div id="carouselExampleIndicators" className="carousel slide animate__animated animate__fadeIn" data-ride="carousel" >
+    <div id="carouselExampleIndicators" style={{paddingTop:'10vh'}} className="carousel slide animate__animated animate__fadeIn" data-ride="carousel" >
         <ol style={{textAlign:'right',right:0,left:'initial'}} className="carousel-indicators">
             <li style={{borderRadius:'100% !important'}} data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
