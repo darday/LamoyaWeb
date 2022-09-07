@@ -1,5 +1,6 @@
 import React from 'react'
 import { FooterScreen } from '../footer/FooterScreen';
+import { MapsScreen } from '../Maps/MapsScreen';
 import { NavBarScreen } from '../navbar/NavBarScreen';
 
 export const ContactosScreen = () => {
@@ -31,10 +32,10 @@ export const ContactosScreen = () => {
                   <b>Email:</b> comuna_lamoya@hotmail.com
                 </div> 
             </div>
-            <div className='col-12 col-sm-6'>
+            <div className='col-12 col-sm-6'  width='50%'>
               
               <h1 className='titulos-grandes-directora' style={{ color:'#4d5480' }}>UBICACIÓN</h1>
-                {/* <MapsScreen/>             */}
+                <MapsScreen/>
             </div>
           </div>
         </div>
