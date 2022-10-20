@@ -4,6 +4,8 @@ import { FooterScreen } from '../footer/FooterScreen'
 import { NavBarScreen } from '../navbar/NavBarScreen'
 
 export const IndexPack1Screen = () => {
+  localStorage.removeItem("menu");
+  window.localStorage.setItem("menu",3);
   return (
     <>
         <NavBarScreen/>

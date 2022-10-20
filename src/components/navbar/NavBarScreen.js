@@ -56,8 +56,11 @@ export const NavBarScreen = () => {
                     {/* <a className='selection-word' href='/'><FaHome/> Inicio</a> */}
                     <a className={`selection-word  ${(localStorage.getItem("menu")==1)  && 'color-seleccionado'} `} href='/' onClick={()=>menuSeleccionado(1)} > Inicio</a>
                     <a className={`selection-word ${(localStorage.getItem("menu")==2)  && 'color-seleccionado'} `} href='/gastronomia'  onClick={()=>menuSeleccionado(2)} >Gastronomia</a>                    
-                    <a className={`selection-word ${(localStorage.getItem("menu")==3)  && 'color-seleccionado'} `} href='/cuyes'  onClick={()=>menuSeleccionado(3)} >Cuyes</a>                    
-                    <a className={`selection-word ${(localStorage.getItem("menu")==4)  && 'color-seleccionado'} `} href='/proyectos'  onClick={()=>menuSeleccionado(4)} >Proyectos</a>                   
+                    <a className={`selection-word ${(localStorage.getItem("menu")==7)  && 'color-seleccionado'} `} href='/economia'  onClick={()=>menuSeleccionado(7)} >Economía Propia</a>                    
+                    {/* <a className={`selection-word ${(localStorage.getItem("menu")==3)  && 'color-seleccionado'} `} href='/cuyes'  onClick={()=>menuSeleccionado(3)} >Cuyes</a>                     */}
+                    <a className={`selection-word ${(localStorage.getItem("menu")==3)  && 'color-seleccionado'} `} href='/pack1'  onClick={()=>menuSeleccionado(3)} >Paquete del día</a>                    
+                    <a className={`selection-word ${(localStorage.getItem("menu")==4)  && 'color-seleccionado'} `} href='/pack2'  onClick={()=>menuSeleccionado(4)} >Paquete Moya</a>                   
+                    {/* <a className={`selection-word ${(localStorage.getItem("menu")==4)  && 'color-seleccionado'} `} href='/proyectos'  onClick={()=>menuSeleccionado(4)} >Proyectos</a>                    */}
                     <a className={`selection-word ${(localStorage.getItem("menu")==5)  && 'color-seleccionado'} `} href='/galeria'  onClick={()=>menuSeleccionado(5)} >Galeria</a>                   
                     <a className={`selection-word ${(localStorage.getItem("menu")==6)  && 'color-seleccionado'} `} href='/contactos'  onClick={()=>menuSeleccionado(6)} >Contactos</a>                   
                     

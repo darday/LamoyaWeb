@@ -8,6 +8,7 @@ import { ContactosScreen } from './components/initialPages/ContactosScreen'
 import { CuyesScreen } from './components/initialPages/CuyesScreen'
 import { ProyectosScreen } from './components/initialPages/ProyectosScreen'
 import { GaleriaScreen } from './components/gallery/GaleriaScreen'
+import { EconomyScreen } from './components/initialPages/EconomyScreen'
 export const LaMoyaApp = () => {
   return (
 
@@ -15,6 +16,7 @@ export const LaMoyaApp = () => {
         <Routes>
           <Route path="/" element={<IndexScreen/>}/>
           <Route path="gastronomia" element={<GastronomiaScreen/>}/>
+          <Route path="economia" element={<EconomyScreen/>}/>
           <Route path="cuyes" element={<CuyesScreen/>}/>
           <Route path="proyectos" element={<ProyectosScreen/>}/>
           <Route path="galeria" element={<GaleriaScreen/>}/>

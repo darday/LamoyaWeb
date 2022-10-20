@@ -6,6 +6,8 @@ import { MapsScreen } from '../Maps/MapsScreen'
 import { useHistory } from 'react-router-dom'
 
 export const IndexPack2Screen = () => {
+  localStorage.removeItem("menu");
+  window.localStorage.setItem("menu",4);
   // const history = useHistory();
   // const handleClick = () => history.push('/Pack1');
   return (
