@@ -7,84 +7,94 @@ import { BurguerButon } from './BurguerButon'
 
 export const NavBarScreen = () => {
 
-    const [clicked, setclicked] = useState(false);
+  const [clicked, setclicked] = useState(false);
 
-    const handleClick = ()=>{
-        setclicked(!clicked);
+  const handleClick = () => {
+    setclicked(!clicked);
+  }
+
+  const menuSeleccionado = (opcion) => {
+    switch (opcion) {
+      case 1:
+        localStorage.removeItem("menu");
+        window.localStorage.setItem("menu", 1);
+        break;
+      case 2:
+        localStorage.removeItem("menu");
+        window.localStorage.setItem("menu", 2);
+        break;
+
+      case 3:
+        localStorage.removeItem("menu");
+        window.localStorage.setItem("menu", 3);
+        break;
+
+      case 4:
+        localStorage.removeItem("menu");
+        window.localStorage.setItem("menu", 4);
+        break;
+
+      case 5:
+        localStorage.removeItem("menu");
+        window.localStorage.setItem("menu", 5);
+        break;
+      case 6:
+        localStorage.removeItem("menu");
+        window.localStorage.setItem("menu", 6);
+        break;
+      case 7:
+        localStorage.removeItem("menu");
+        window.localStorage.setItem("menu", 7);
+        break;
+      case 8:
+        localStorage.removeItem("menu");
+        window.localStorage.setItem("menu", 8);
+        break;
+
+      default:
+        break;
     }
-
-    const menuSeleccionado=(opcion)=>{
-      switch (opcion) {
-        case 1:
-          localStorage.removeItem("menu");
-          window.localStorage.setItem("menu",1);
-          break;
-        case 2:
-          localStorage.removeItem("menu");
-          window.localStorage.setItem("menu",2);
-          break;
-        
-        case 3:
-          localStorage.removeItem("menu");
-          window.localStorage.setItem("menu",3);
-          break;
-
-        case 4:
-          localStorage.removeItem("menu");
-          window.localStorage.setItem("menu",4);
-          break;
-
-        case 5:
-          localStorage.removeItem("menu");
-          window.localStorage.setItem("menu",5);
-          break;
-        case 6:
-          localStorage.removeItem("menu");
-          window.localStorage.setItem("menu",6);
-          break;
-        case 7:
-          localStorage.removeItem("menu");
-          window.localStorage.setItem("menu",7);
-          break;
-        case 8:
-          localStorage.removeItem("menu");
-          window.localStorage.setItem("menu",8);
-          break;
-      
-        default:
-          break;
-      }
   }
 
   return (
-        <>
-            <NavContainer className='fixed-top'>
-                 {/* <span>Moya</span></h2> */}
-                <a className={`selection-word  ${(localStorage.getItem("menu")==1)  && 'color-seleccionado'} `} href='/' onClick={()=>menuSeleccionado(1)} > 
-                  <img src={"./assets/images/logos/logo-color.png"} width="190vw" height="auto" alt=""></img>
-                </a>
+    <>
+      <NavContainer className='fixed-top'>
+        {/* <span>Moya</span></h2> */}
+        <a className={`selection-word  ${(localStorage.getItem("menu") == 1) && 'color-seleccionado'} `} href='/' onClick={() => menuSeleccionado(1)} >
+          <img src={"./assets/images/logos/logo-color.png"} width="190vw" height="auto" alt=""></img>
+        </a>
 
-                <div className={`links ${clicked ?'active':''}`}>
-                    {/* <a className='selection-word' href='/'><FaHome/> Inicio</a> */}
-                    <a className={`selection-word  ${(localStorage.getItem("menu")==1)  && 'color-seleccionado'} `} href='/' onClick={()=>menuSeleccionado(1)} > Inicio</a>
-                    <a className={`selection-word ${(localStorage.getItem("menu")==3)  && 'color-seleccionado'} `} href='/pack1'  onClick={()=>menuSeleccionado(3)} >Paquete del día</a>                    
-                    <a className={`selection-word ${(localStorage.getItem("menu")==4)  && 'color-seleccionado'} `} href='/pack2'  onClick={()=>menuSeleccionado(4)} >Paquete Moya</a>                   
-                    <a className={`selection-word ${(localStorage.getItem("menu")==2)  && 'color-seleccionado'} `} href='/gastronomia'  onClick={()=>menuSeleccionado(2)} >Gastronomia</a>                    
-                    <a className={`selection-word ${(localStorage.getItem("menu")==7)  && 'color-seleccionado'} `} href='/economia'  onClick={()=>menuSeleccionado(7)} >Economía Propia</a>                    
-                    {/* <a className={`selection-word ${(localStorage.getItem("menu")==3)  && 'color-seleccionado'} `} href='/cuyes'  onClick={()=>menuSeleccionado(3)} >Cuyes</a>                     */}
-                    <a className={`selection-word ${(localStorage.getItem("menu")==8)  && 'color-seleccionado'} `} href='/proyectos'  onClick={()=>menuSeleccionado(8)} >Proyectos</a>                   
-                    <a className={`selection-word ${(localStorage.getItem("menu")==5)  && 'color-seleccionado'} `} href='/galeria'  onClick={()=>menuSeleccionado(5)} >Galeria</a>                   
-                    <a className={`selection-word ${(localStorage.getItem("menu")==6)  && 'color-seleccionado'} `} href='/contactos'  onClick={()=>menuSeleccionado(6)} >Contactos</a>                   
-                    
-                </div>
-                <div className='burguer'>
-                    <BurguerButon clicked={clicked} handleClick={handleClick}/>
-                </div>
-                <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
+        <div className={`links ${clicked ? 'active' : ''}`}>
+          {/* <a className='selection-word' href='/'><FaHome/> Inicio</a> */}
+          <a className={`selection-word  ${(localStorage.getItem("menu") == 1) && 'color-seleccionado'} `} href='/' onClick={() => menuSeleccionado(1)} > Inicio</a>
+          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Paquetes
+          </a>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            {/* <li><a className="dropdown-item" href="#">Action</a></li>
+            <li><a className="dropdown-item" href="#">Another action</a></li> */}
+            <li><a className={`dropdown-item selection-word ${(localStorage.getItem("menu") == 3) && 'color-seleccionado'} `} href='/pack1' onClick={() => menuSeleccionado(3)} >Paquete del día</a></li>
+            <li><a className={`dropdown-item selection-word ${(localStorage.getItem("menu") == 4) && 'color-seleccionado'} `} href='/pack2' onClick={() => menuSeleccionado(4)} >Paquete Moya</a></li>
 
-            </NavContainer>
-        </>
-    )
+
+          </ul>
+
+          <a className={`selection-word ${(localStorage.getItem("menu") == 2) && 'color-seleccionado'} `} href='/gastronomia' onClick={() => menuSeleccionado(2)} >Gastronomia</a>
+          <a className={`selection-word ${(localStorage.getItem("menu") == 7) && 'color-seleccionado'} `} href='/economia' onClick={() => menuSeleccionado(7)} >Economía Propia</a>
+          {/* <a className={`selection-word ${(localStorage.getItem("menu")==3)  && 'color-seleccionado'} `} href='/cuyes'  onClick={()=>menuSeleccionado(3)} >Cuyes</a>                     */}
+          <a className={`selection-word ${(localStorage.getItem("menu") == 8) && 'color-seleccionado'} `} href='/proyectos' onClick={() => menuSeleccionado(8)} >Proyectos</a>
+          <a className={`selection-word ${(localStorage.getItem("menu") == 5) && 'color-seleccionado'} `} href='/galeria' onClick={() => menuSeleccionado(5)} >Galeria</a>
+          <a className={`selection-word ${(localStorage.getItem("menu") == 6) && 'color-seleccionado'} `} href='/contactos' onClick={() => menuSeleccionado(6)} >Contactos</a>
+
+        </div>
+        <div className='burguer'>
+          <BurguerButon clicked={clicked} handleClick={handleClick} />
+        </div>
+        <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
+
+      </NavContainer>
+    </>
+  )
 }
 
 const NavContainer = styled.nav`
