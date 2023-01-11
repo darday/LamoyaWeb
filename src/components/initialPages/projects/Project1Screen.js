@@ -10,19 +10,29 @@ export const Project1Screen = () => {
       <div className='container'>
         <div style={{ color: '#09302b' }}>
           <h1><br></br><br></br><br></br>
-            <center><b>PROYECTOS</b></center>
+            <center><b>NQSF 2018-2022</b></center>
           </h1><br></br>
         </div>
         <div className="row" style={{ paddingBottom: '5vh' }}>
           <div className="col-12 col-sm-12 col-md-6">
             <h4 style={{ textAlign: 'justify' }}>
-              Un párrafo es una unidad de un texto compuesta por una o varias oraciones, que comienza con una mayúscula y
-              que termina con un punto y aparte. Los textos se organizan de manera tal que cada párrafo trata sobre una idea central.
-              Generalmente, la primera oración de cada párrafo suele explicitar cuál es el punto principal que se desarrollará.
+              “Reactivación para la autodeterminación de las mujeres de la Comunidad La Moya”, ejecutado por la Fundación Arte Nativo, con el aporte del Ministerio de Relaciones Exteriores Internacionales de Canadá y el Centro de Solidaridad Internacional de Saguenay-Lac-Saint-Jean.
             </h4>
+            <ul className="list-unstyled">
+              <li>
+                <ul>
+                  <li><h4>Fortalecer la soberanía alimentaria, salud preventiva y promover el emprendimiento</h4></li>
+                  <li><h4>Promover la artesanía y economía propia de las mujeres </h4></li>
+                  <li><h4>Encuentro de mujeres para el empoderamiento de derechos</h4></li>
+                  <li><h4>Fortalecimiento de la identidad cultural y la autodeterminación de las mujeres</h4></li>
+                  <li><h4>Apoyar a la creación de productos artísticos para el turismo comunitario</h4></li>
+                  
+                </ul>
+              </li>
+            </ul>
           </div>
           <div className="col-12 col-sm-12 col-md-6" style={{ textAlign: 'center' }}>
-            <img src={`./assets/img/index6.jpeg`} width='80%'></img>
+            <img src={`./assets/images/projects/pro1.jpeg`} width='85%' style={{borderRadius:'10vh'}}></img>
           </div>
         </div>
       </div>

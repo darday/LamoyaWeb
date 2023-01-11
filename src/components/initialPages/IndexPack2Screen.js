@@ -38,7 +38,7 @@ export const IndexPack2Screen = () => {
         </div>
 
         <div  className='container'>
-          <h1 style={{ textAlign: 'center', paddingTop: '10vh', fontSize: '3rem', color:'#09302b', }}>8:00</h1>
+          <h1 style={{ textAlign: 'center', paddingTop: '10vh', fontSize: '3rem', color:'#09302b', }}>20:00</h1>
           <div className='texto-pack' >
             Canelazo y fogata, cena y pernoctar.
           </div>
@@ -51,7 +51,7 @@ export const IndexPack2Screen = () => {
         <div  className='container'>
           <h1 style={{ textAlign: 'center', paddingTop: '10vh', fontSize: '4rem', color:'#09302b', }}><b>DÍA 2</b></h1>
           <div className='texto-pack' >
-            20:00 desayuno y check out.
+            08:00 desayuno y check out.
           </div>
         </div>
 

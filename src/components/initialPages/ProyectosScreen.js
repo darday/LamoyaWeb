@@ -37,68 +37,100 @@ export const ProyectosScreen = () => {
         </div>
       </div> */}
 
-      <div className='container'><br></br><br></br><br></br>
+      <div className='container'><br></br><br></br><br></br><br></br><br></br>
+        <h1 className='text-center'>
+          <b>PROYECTOS</b>
+        </h1>
         <div className="textgastro13" style={{ color: '#09302b' }}>
-          <h1>
-            <b>ARTESANIAS</b>
-          </h1>
-          <h4 className='texto-pack12'><br></br>
-            En esta parte poner la descripción de la gastronomía en general de la moya o la info que se desee.
+          <h4 className='texto-pack12'>
+            La comunidad la moya con el transcurso del tiempo ha desarrollado diversos proyectos, a continuación se muestras algunos proyectos.
           </h4>
         </div>
       </div>
 
       <div className='container'>
         <div style={{ color: '#09302b' }}>
-          <h1>
-            <center><b>PROYECTOS</b></center>
-          </h1><br></br>
+          <br></br>
         </div>
         <div className="row row-cols-1 row-cols-md-2 g-4">
           <div className="col">
-            <div className="card" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
+            <div className="card text-center" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
               <a href={"/proyecto1"}>
-                <img src={`./assets/img/index6.jpeg`}></img>
+                <img src={`./assets/images/projects/pro1.jpeg`} width='85%' style={{ borderRadius: '10vh' }}></img>
               </a>
               <div className="card-body">
-                <h5 className="card-title"><b>TITULO PROYECTO</b></h5>
-                <p className="card-text">Breve descripción…</p>
+                <h5 className="card-title"><b>NQSF 2018-2022</b></h5>
+                {/* <p className="card-text">Reactivación para la autodeterminación de las mujeres de la Comunidad La Moya...</p> */}
               </div>
             </div>
           </div>
           <div className="col">
-            <div className="card" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
+            <div className="card text-center" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
               <a href={"/proyecto2"}>
-                <img src={`./assets/img/index6.jpeg`}></img>
+                <img src={`./assets/images/projects/pro2.jpeg`} width='85%' style={{ borderRadius: '10vh' }}></img>
               </a>
               <div className="card-body">
-                <h5 className="card-title"><b>TITULO PROYECTO</b></h5>
-                <p className="card-text">Breve descripción…</p>
+                <h5 className="card-title"><b>PSIJ-2019-2023</b></h5>
+                {/* <p className="card-text">Breve descripción…</p> */}
               </div>
             </div>
           </div>
           <div className="col">
-            <div className="card" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
+            <div className="card text-center" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
               <a href={"/proyecto3"}>
-                <img src={`./assets/img/index6.jpeg`}></img>
+                <img src={`./assets/images/projects/pro3.jpg`} width='85%' style={{ borderRadius: '10vh' }}></img>
               </a>
               <div className="card-body">
-                <h5 className="card-title"><b>TITULO PROYECTO</b></h5>
-                <p className="card-text">Breve descripción…</p>
+                <h5 className="card-title"><b>CÉGEP-2019-2023</b></h5>
+                {/* <p className="card-text">Breve descripción…</p> */}
               </div>
             </div>
           </div>
           <div className="col">
-            <div className="card" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
+            <div className="card text-center" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
               <a href={"/proyecto4"}>
-                <img src={`./assets/img/index6.jpeg`}></img>
+                <img src={`./assets/images/projects/pro4.jpg`} width='85%' style={{ borderRadius: '10vh' }}></img>
               </a>
               <div className="card-body">
-                <h5 className="card-title"><b>TITULO PROYECTO</b></h5>
-                <p className="card-text">Breve descripción…</p>
+                <h5 className="card-title"><b>FESTIVAL CINE ECUATORIANO KUNTURÑAWI 2006-2022</b></h5>
+                {/* <p className="card-text">Breve descripción…</p> */}
               </div>
             </div>
           </div>
+          <div className="col">
+            <div className="card text-center" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
+              <a href={"/proyecto5"}>
+              <img src={`./assets/images/projects/pro5.jpg`} width='85%' style={{ borderRadius: '10vh' }}></img>
+              </a>
+              <div className="card-body">
+                <h5 className="card-title"><b>CLUBES DE TEATRO Y CINE EN UNIDADES EDUCATIVAS Y COMUNIDADES INDIGENAS 2007-2022</b></h5>
+                {/* <p className="card-text">Breve descripción…</p> */}
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card text-center" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
+              <a href={"/proyecto6"}>
+              <img src={`./assets/images/projects/pro6.jpg`} width='85%' style={{ borderRadius: '10vh' }}></img>
+              </a>
+              <div className="card-body">
+                <h5 className="card-title"><b>FESTIVAL INFANTIL-JUVENIL “WAWAS AL CINE” 2017-2022</b></h5>
+                {/* <p className="card-text">Breve descripción…</p> */}
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card text-center" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
+              <a href={"/proyecto7"}>
+              <img src={`./assets/images/projects/pro7.jpg`} width='85%' style={{ borderRadius: '10vh' }}></img>
+              </a>
+              <div className="card-body">
+                <h5 className="card-title"><b>REVITALIZACIÓN CULTURAL EN OZOGOCHE - 2002 - 2015: </b></h5>
+                {/* <p className="card-text">Breve descripción…</p> */}
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 

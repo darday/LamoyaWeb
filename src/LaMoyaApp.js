@@ -13,6 +13,9 @@ import { Project1Screen } from './components/initialPages/projects/Project1Scree
 import { Project2Screen } from './components/initialPages/projects/Project2Screen'
 import { Project3Screen } from './components/initialPages/projects/Project3Screen'
 import { Project4Screen } from './components/initialPages/projects/Project4Screen'
+import { Project5Screen } from './components/initialPages/projects/Project5Screen'
+import { Project6Screen } from './components/initialPages/projects/Project6Screen'
+import { Project7Screen } from './components/initialPages/projects/Project7Screen'
 export const LaMoyaApp = () => {
   return (
 
@@ -29,6 +32,11 @@ export const LaMoyaApp = () => {
           <Route path="proyecto2" element={<Project2Screen/>}/>
           <Route path="proyecto3" element={<Project3Screen/>}/>
           <Route path="proyecto4" element={<Project4Screen/>}/>
+          <Route path="proyecto5" element={<Project5Screen/>}/>
+          <Route path="proyecto6" element={<Project6Screen/>}/>
+          <Route path="proyecto7" element={<Project7Screen/>}/>
+          <Route path="pack1" element={<IndexPack1Screen/>}/>
+          <Route path="pack2" element={<IndexPack2Screen/>}/>
         </Routes>
       </BrowserRouter>
     )

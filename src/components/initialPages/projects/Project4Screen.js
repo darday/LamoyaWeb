@@ -10,22 +10,26 @@ export const Project4Screen = () => {
       <div className='container'>
         <div style={{ color: '#09302b' }}>
           <h1><br></br><br></br><br></br>
-            <center><b>PROYECTOS</b></center>
+            <center><b>FESTIVAL CINE ECUATORIANO KUNTURÑAWI 2006-2022</b></center>
           </h1><br></br>
         </div>
         <div className="row" style={{ paddingBottom: '5vh' }}>
           <div className="col-12 col-sm-12 col-md-6">
             <h4 style={{ textAlign: 'justify' }}>
-              Un párrafo es una unidad de un texto compuesta por una o varias oraciones, que comienza con una mayúscula y
-              que termina con un punto y aparte. Los textos se organizan de manera tal que cada párrafo trata sobre una idea central.
-              Generalmente, la primera oración de cada párrafo suele explicitar cuál es el punto principal que se desarrollará.
+              Kunturñawi, es una apuesta al cine ecuatoriano, su descentralización hacia el centro del país: ciudades y comunidades indígenas, para accedan a las películas como un derecho y la formación de públicos menos favorecidos. A lo largo de estas diez ediciones se ha constituido en la ventada de difusión de 417 films a una audiencia de mas de cien mil ciudadanos urbanos y rurales.
+              <br></br>
+              <br></br>
+              Estamos en la vigésimo primera edición y la miradas son diversas en 37 obras cinematográficas que serán expuestas del 5 al 12 de noviembre del 2022 en las Provincias de Chimborazo, Cotopaxi, Tungurahua y Bolívar.
             </h4>
           </div>
           <div className="col-12 col-sm-12 col-md-6" style={{ textAlign: 'center' }}>
-            <img src={`./assets/img/index6.jpeg`} width='80%'></img>
+            <img src={`./assets/images/projects/pro4.jpg`} width='85%' style={{ borderRadius: '10vh' }}></img>
           </div>
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
       <FooterScreen />
       <WhatsappButtonScreen />
     </>
