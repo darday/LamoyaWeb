@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavBarScreen } from '../navbar/NavBarScreen';
+import { WhatsappButtonScreen } from './whatsappButton/WhatsappButtonScreen';
+import { FooterScreen } from '../footer/FooterScreen';
 
 export const ProyectosScreen = () => {
   localStorage.removeItem("menu");
@@ -55,7 +57,9 @@ export const ProyectosScreen = () => {
         <div className="row row-cols-1 row-cols-md-2 g-4">
           <div className="col">
             <div className="card" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
-              <img src={`./assets/img/index6.jpeg`}></img>
+              <a href={"/proyecto1"}>
+                <img src={`./assets/img/index6.jpeg`}></img>
+              </a>
               <div className="card-body">
                 <h5 className="card-title"><b>TITULO PROYECTO</b></h5>
                 <p className="card-text">Breve descripción…</p>
@@ -64,7 +68,9 @@ export const ProyectosScreen = () => {
           </div>
           <div className="col">
             <div className="card" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
-              <img src={`./assets/img/index6.jpeg`}></img>
+              <a href={"/proyecto2"}>
+                <img src={`./assets/img/index6.jpeg`}></img>
+              </a>
               <div className="card-body">
                 <h5 className="card-title"><b>TITULO PROYECTO</b></h5>
                 <p className="card-text">Breve descripción…</p>
@@ -73,7 +79,9 @@ export const ProyectosScreen = () => {
           </div>
           <div className="col">
             <div className="card" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
-              <img src={`./assets/img/index6.jpeg`}></img>
+              <a href={"/proyecto3"}>
+                <img src={`./assets/img/index6.jpeg`}></img>
+              </a>
               <div className="card-body">
                 <h5 className="card-title"><b>TITULO PROYECTO</b></h5>
                 <p className="card-text">Breve descripción…</p>
@@ -82,16 +90,20 @@ export const ProyectosScreen = () => {
           </div>
           <div className="col">
             <div className="card" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
-              <img src={`./assets/img/index6.jpeg`}></img>
+              <a href={"/proyecto4"}>
+                <img src={`./assets/img/index6.jpeg`}></img>
+              </a>
               <div className="card-body">
                 <h5 className="card-title"><b>TITULO PROYECTO</b></h5>
                 <p className="card-text">Breve descripción…</p>
               </div>
             </div>
           </div>
-          
         </div>
       </div>
+
+      <WhatsappButtonScreen />
+      <FooterScreen />
 
     </>
 

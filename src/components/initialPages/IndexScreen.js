@@ -323,9 +323,6 @@ export const IndexScreen = () => {
 
       <WhatsappButtonScreen/>
       <FooterScreen />
-
-
-
     </>
   )
 }
