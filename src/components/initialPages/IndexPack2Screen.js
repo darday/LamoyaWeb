@@ -4,6 +4,9 @@ import { CarouselScreen2 } from '../carousel/CarouselScreen2'
 import { NavBarScreen } from '../navbar/NavBarScreen'
 import { MapsScreen } from '../Maps/MapsScreen'
 import { useHistory } from 'react-router-dom'
+import { RitualScreen } from './tours/RitualScreen'
+import { FooterScreen } from '../footer/FooterScreen'
+import { WhatsappButtonScreen } from './whatsappButton/WhatsappButtonScreen'
 
 export const IndexPack2Screen = () => {
   localStorage.removeItem("menu");
@@ -14,16 +17,18 @@ export const IndexPack2Screen = () => {
     <>
         <NavBarScreen/>
         <CarouselScreen2/>
+        
         {/* <div>
           <img src= { `./assets/img/index12.jpeg` } width="auto" height= '600vh' background></img>
         </div>  */}
 
         <center><img src= { `./assets/img/index13.png` } className='paquetemoya' width="45%" height= 'auto'></img></center> 
 
+        <RitualScreen/>
         <div  className='container'>
           <h1 style={{ textAlign: 'center', paddingTop: '2vh', fontSize: '4rem', color:'#09302b', }}><b>DÍA 1</b></h1>
           <div className='texto-pack' >
-            4:00 Check inn, caminata, visita
+            16:00 Check inn, caminata, visita
             museo iglesia, tiempo libre.
           </div>
         </div> 
@@ -46,7 +51,7 @@ export const IndexPack2Screen = () => {
         <div  className='container'>
           <h1 style={{ textAlign: 'center', paddingTop: '10vh', fontSize: '4rem', color:'#09302b', }}><b>DÍA 2</b></h1>
           <div className='texto-pack' >
-            08:00 desayuno y check out.
+            20:00 desayuno y check out.
           </div>
         </div>
 
@@ -96,6 +101,8 @@ export const IndexPack2Screen = () => {
         <div className='container' style={{ paddingTop: '5vh', paddingBottom: '5vh', paddingLeft: '10%', paddingRight: '10%' }}>
           <center><MapsScreen/></center>
         </div>
+        <WhatsappButtonScreen/>
+        <FooterScreen/>
     </>
   )
 }
