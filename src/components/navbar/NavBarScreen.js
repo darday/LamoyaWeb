@@ -50,6 +50,10 @@ export const NavBarScreen = () => {
         localStorage.removeItem("menu");
         window.localStorage.setItem("menu", 8);
         break;
+      case 9:
+        localStorage.removeItem("menu");
+        window.localStorage.setItem("menu", 9);
+        break;
 
       default:
         break;
@@ -67,16 +71,14 @@ export const NavBarScreen = () => {
         <div className={`links ${clicked ? 'active' : ''}`}>
           {/* <a className='selection-word' href='/'><FaHome/> Inicio</a> */}
           <a className={`selection-word  ${(localStorage.getItem("menu") == 1) && 'color-seleccionado'} `} href='/' onClick={() => menuSeleccionado(1)} > Inicio</a>
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Paquetes
+          <a className={`nav-link dropdown-toggle dropdown-item selection-word ${(localStorage.getItem("menu") == 3  || localStorage.getItem("menu") == 4) && 'color-seleccionado'} `} href='/pack1' onClick={() => menuSeleccionado(9)}  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Paquetes 
           </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul className="dropdown-menu" style={{left:'99px !important'}} aria-labelledby="navbarDropdown">
             {/* <li><a className="dropdown-item" href="#">Action</a></li>
             <li><a className="dropdown-item" href="#">Another action</a></li> */}
             <li><a className={`dropdown-item selection-word ${(localStorage.getItem("menu") == 3) && 'color-seleccionado'} `} href='/pack1' onClick={() => menuSeleccionado(3)} >Paquete del día</a></li>
             <li><a className={`dropdown-item selection-word ${(localStorage.getItem("menu") == 4) && 'color-seleccionado'} `} href='/pack2' onClick={() => menuSeleccionado(4)} >Paquete Moya</a></li>
-
-
           </ul>
 
           <a className={`selection-word ${(localStorage.getItem("menu") == 2) && 'color-seleccionado'} `} href='/gastronomia' onClick={() => menuSeleccionado(2)} >Gastronomia</a>
@@ -196,6 +198,6 @@ const BgDiv = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
   }
 `

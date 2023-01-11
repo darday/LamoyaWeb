@@ -3,6 +3,7 @@ import { NavBarScreen } from '../navbar/NavBarScreen'
 import menupdf from './CARTAMENU.pdf'
 import { CarouselScreen3g } from '../carousel/CarouselScreen3g';
 import { FooterScreen } from '../footer/FooterScreen';
+import { WhatsappButtonScreen } from './whatsappButton/WhatsappButtonScreen';
 
 export const GastronomiaScreen = () => {
   localStorage.removeItem("menu");
@@ -201,6 +202,8 @@ export const GastronomiaScreen = () => {
         <div>
           <img src= { `./assets/img/gastro13.jpeg` } width="100%" height= 'auto'></img>
         </div>
+
+        <WhatsappButtonScreen/>
         
         <FooterScreen/>
     </>

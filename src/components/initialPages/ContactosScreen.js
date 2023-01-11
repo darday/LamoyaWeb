@@ -2,6 +2,7 @@ import React from 'react'
 import { FooterScreen } from '../footer/FooterScreen';
 import { MapsScreen } from '../Maps/MapsScreen';
 import { NavBarScreen } from '../navbar/NavBarScreen';
+import { WhatsappButtonScreen } from './whatsappButton/WhatsappButtonScreen';
 
 export const ContactosScreen = () => {
     localStorage.removeItem("menu");
@@ -53,25 +54,25 @@ export const ContactosScreen = () => {
           <h1 className='text-center'>Ponte en contacto, Escríbenos!</h1>
           <br></br>
 
-          <form style={{paddingBottom:'10vh'}}>
+          <form style={{paddingBottom:'10vh'}} action="https://formsubmit.co/comuna_lamoya@hotmail.com" method="POST" >
             <div className='row'>
               <div className='col-12 col-sm-12 col-md-6'>
                 <div className="mb-3">
                   <label  className="form-label">Nombre</label>
-                  <input type="text" className="form-control" id="exampleInputPassword1" required></input>
+                  <input type="text" name='name'  className="form-control" id="exampleInputPassword1" required></input>
                 </div>
               </div>
               <div className='col-12 col-sm-12 col-md-6'>
                 <div className="mb-3">
                   <label className="form-label">Correo Electrónico</label>
-                  <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required></input>
+                  <input type="email" name='email' className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required></input>
                 </div>
               </div>
             </div>
             <div className=''> 
             <div className="mb-3">
               <label  className="form-label">Escribe aquí tu mensaje:</label>
-              <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+              <textarea name='comments' className="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
             </div>
             </div>
             <button type="submit" className="btn btn-primary" style={{BackgroundColor:'#ee833b !important'}}>Enviar mensaje</button>
@@ -82,7 +83,7 @@ export const ContactosScreen = () => {
         <br></br>
         <br></br>
         <br></br>
-
+        <WhatsappButtonScreen/>
         <FooterScreen/>    
     </>
   )

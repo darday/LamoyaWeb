@@ -1,0 +1,28 @@
+.rit-desc{
+    padding: 5vh;
+}
+
+.pant-grande{
+    display: block;
+}
+
+.pant-peque{
+    display: none;
+}
+
+@media (max-width:801px)  {
+    .rit-tit {
+        padding-top: 5vh !important;
+    }
+    .rit-desc{
+        padding: 1vh;
+    }
+
+    .pant-grande{
+        display: none;
+    }
+    
+    .pant-peque{
+        display: block;
+    }
+}
