@@ -31,10 +31,10 @@ export const GastronomiaScreen = () => {
 
           </div>
         </div>
-
+{/* 
         <div>
           <img src= { `./assets/img/gastro3.jpeg` } width="100%" height= 'auto'></img>
-        </div> 
+        </div>  */}
 
         <center>
           <div className='descargamenu'>

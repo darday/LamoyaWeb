@@ -9,7 +9,7 @@ export const CarouselScreen3g = () => {
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div className="carousel-inner">
-            <div className="carousel-item active" data-bs-interval="2000"  style={{backgroundImage:`url('./assets/img/gastro1.jpeg')`}}> 
+            <div className="carousel-item active" data-bs-interval="2000"  style={{backgroundImage:`url('./assets/img/gastro3.jpeg')`}}> 
                 <div >
                     {/* <div className="text_cent_img camping-letters animate__animated animate__fadeInLeft "><h1 className="tit-sob-img" >CAMPING CHIMBORAZO</h1></div>
                     <div className="text_cent_img2 animate__animated animate__fadeInRight "><p className="tit-sob-img2" style={{color:"white"}}>La aventura está en el camino</p></div> */}
