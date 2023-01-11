@@ -3,7 +3,7 @@ import { NavBarScreen } from '../navbar/NavBarScreen';
 
 export const ProyectosScreen = () => {
     localStorage.removeItem("menu");
-    window.localStorage.setItem("menu",4);
+    window.localStorage.setItem("menu",8);
   return (
     <>
         <NavBarScreen/>
