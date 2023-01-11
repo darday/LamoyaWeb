@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavBarScreen } from '../navbar/NavBarScreen'
 import { CarouselScreen3g } from '../carousel/CarouselScreen3g';
+import { WhatsappButtonScreen } from './whatsappButton/WhatsappButtonScreen';
+import { FooterScreen } from '../footer/FooterScreen';
 
 export const EconomyScreen = () => {
     localStorage.removeItem("menu");
@@ -319,6 +321,10 @@ export const EconomyScreen = () => {
                     </div>
                 </div>
             </div>
+
+            <WhatsappButtonScreen/>
+            <FooterScreen/>
+
         </>
     )
 }
