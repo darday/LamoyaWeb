@@ -141,7 +141,7 @@ export const GastronomiaScreen = () => {
               </div>
               <div className='col-12 col-sm-6'>
                 <div className='image-visit1'>
-                  <img src= { `./assets/img/gastro10.png` } style={{ paddingTop: '5vh' }}></img>
+                  <img src= { `./assets/img/gastro10-act.png` } style={{ paddingTop: '5vh' }}></img>
                 </div>
                 <div className='icon-visit1'><img src= { `./assets/img/gastro11.png` }></img></div>
                 <div className='comidas'>

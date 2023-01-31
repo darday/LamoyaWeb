@@ -14,7 +14,7 @@ export const EconomyScreen = () => {
 
             <div className='container'> <br></br><br></br>
                 <div className='texto-pack11' >
-                    Esta es una descripción de la economía propia de la moya
+                    {/* Esta es una descripción de la economía propia de la moya */}
                 </div>
                 <div style={{ textAlign: 'center', paddingTop: '2vh', fontSize: '2rem', color: '#09302b', }} >
                     SI VISITAS LA MOYA PUEDES ADQUIRIR LOS SIGUIENTES PRODUCTOS:
@@ -26,24 +26,24 @@ export const EconomyScreen = () => {
                     <h1>
                         <b>ARTESANIAS</b>
                     </h1>
-                    <h4 className='texto-pack12' >
+                    {/* <h4 className='texto-pack12' >
                         Esta es una descripción de las artesanías de la Moya.
-                    </h4>
+                    </h4> */}
                 </div>
-                <div className="row row-cols-1 row-cols-md-4 g-4">
+                <div className="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/bufanda.png`} style={{ borderRadius: '40px' }}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>Bufanda con lana de llama</b></h5>
-                                <h5 className="card-title">Precio: 10</h5>
+                                <h5 className="card-title">Precio: 15</h5>
                                 {/* <p class="card-text">sd.</p> */}
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/gorra.png`} style={{ borderRadius: '40px' }}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>Gorra con lana de llama</b></h5>
                                 <h5 className="card-title">Precio: 10</h5>
@@ -53,26 +53,59 @@ export const EconomyScreen = () => {
                     </div>
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/guantes.png`} style={{ borderRadius: '40px' }}></img>
                             <div className="card-body">
-                                <h5 className="card-title"><b>Guantes con lana</b></h5>
+                                <h5 className="card-title"><b>Guantes con lana de llama</b></h5>
                                 <h5 className="card-title">Precio: 10</h5>
                             </div>
                         </div>
                     </div>
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/chal.png`} style={{ borderRadius: '40px' }}></img>
                             <div className="card-body">
-                                <h5 className="card-title"><b>Bufanda con lana de llama</b></h5>
-                                <h5 className="card-title">Precio: 10</h5>
+                                <h5 className="card-title"><b>Chal con lana de llama</b></h5>
+                                <h5 className="card-title">Precio: 35</h5>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div className="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+                    <div className="col">
+                        <div className="card" style={{ border: "0" }}>
+                            <img src={`./assets/img/medias.png`} style={{ borderRadius: '40px' }}></img>
+                            <div className="card-body">
+                                <h5 className="card-title"><b>Medias con lana de llama</b></h5>
+                                <h5 className="card-title">Precio: 15</h5>
+                                {/* <p class="card-text">sd.</p> */}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="card" style={{ border: "0" }}>
+                            <img src={`./assets/img/shigra.png`} style={{ borderRadius: '40px' }}></img>
+                            <div className="card-body">
+                                <h5 className="card-title"><b>Shigra pequeña con lana de llama</b></h5>
+                                <h5 className="card-title">Precio: 5</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="card" style={{ border: "0" }}>
+                            <img src={`./assets/img/sueter.png`} style={{ borderRadius: '40px' }}></img>
+                            <div className="card-body">
+                                <h5 className="card-title"><b>Sueter con lana de llama</b></h5>
+                                <h5 className="card-title">Precio: 45 Adulto</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
 
-            <div className='container'>
+            {/* <div className='container'>
                 <div className="textgastro13" style={{ color: '#09302b' }}>
                     <h1>
                         <b>ESPECIES MENORES</b>
@@ -81,10 +114,10 @@ export const EconomyScreen = () => {
                         Esta es una descripción de las especies menores.
                     </h4>
                 </div>
-                <div className="row row-cols-1 row-cols-md-4 g-4">
+                <div className="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/index6.jpeg`} style={{borderRadius:'40px'}}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>En Pie</b></h5>
                             </div>
@@ -92,7 +125,7 @@ export const EconomyScreen = () => {
                     </div>
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/index6.jpeg`} style={{borderRadius:'40px'}}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>Pelados</b></h5>
                             </div>
@@ -100,24 +133,17 @@ export const EconomyScreen = () => {
                     </div>
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/index6.jpeg`} style={{borderRadius:'40px'}}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>Adobado</b></h5>
                             </div>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
-                            <div className="card-body">
-                                <h5 className="card-title"><b>En Pie</b></h5>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
-            </div>
+            </div> */}
 
-            <div className='container'>
+            {/* <div className='container'>
                 <div className="textgastro13" style={{ color: '#09302b' }}>
                     <h1>
                         <b>HUERTOS ORGANICOS</b>
@@ -129,7 +155,7 @@ export const EconomyScreen = () => {
                 <div className="row row-cols-1 row-cols-md-4 g-4">
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/index6.jpeg`} style={{borderRadius:'40px'}}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>Bufanda con lana de llama</b></h5>
                                 <h5 className="card-title">Precio: 10</h5>
@@ -138,7 +164,7 @@ export const EconomyScreen = () => {
                     </div>
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/index6.jpeg`} style={{borderRadius:'40px'}}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>Gorra con lana de llama</b></h5>
                                 <h5 className="card-title">Precio: 10</h5>
@@ -148,7 +174,7 @@ export const EconomyScreen = () => {
                     </div>
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/index6.jpeg`} style={{borderRadius:'40px'}}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>Guantes con lana</b></h5>
                                 <h5 className="card-title">Precio: 10</h5>
@@ -157,7 +183,7 @@ export const EconomyScreen = () => {
                     </div>
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/index6.jpeg`} style={{borderRadius:'40px'}}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>Bufanda con lana de llama</b></h5>
                                 <h5 className="card-title">Precio: 10</h5>
@@ -165,7 +191,7 @@ export const EconomyScreen = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className='container'>
                 <div className="textgastro13" style={{ color: '#09302b' }}>
@@ -173,13 +199,13 @@ export const EconomyScreen = () => {
                         <b>ARTE DE LA MOYA</b>
                     </h1>
                     <h4 className='texto-pack12' >
-                        Esta es una descripción del arte que se ha producido en la Moya.
+                        {/* Esta es una descripción del arte que se ha producido en la Moya. */}
                     </h4>
                 </div>
-                <div className="row row-cols-1 row-cols-md-4 g-4">
+                <div className="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/CD-moya.jpg`} style={{ borderRadius: '40px' }}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>CD HIELEROS DE LA MOYA</b></h5>
                                 <h5 className="card-title" style={{ textAlign: 'justify' }}>Sinopsis: Sacarle hielo al corazón del taita Chimborazo actividad de mucho
@@ -188,19 +214,19 @@ export const EconomyScreen = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    {/* <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/index6.jpeg`} style={{borderRadius:'40px'}}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>CD</b></h5>
                                 <h5 className="card-title">Precio: 5</h5>
 
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/libro.jpeg`} style={{ borderRadius: '40px' }}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>LIBRO</b></h5>
                                 <h5 className="card-title" style={{ textAlign: 'justify' }}>Al calor de la nieve, dibujos e historias de niños y niñas de la Comuna La Moya</h5>
@@ -208,9 +234,9 @@ export const EconomyScreen = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    {/* <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/index6.jpeg`} style={{borderRadius:'40px'}}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>CD HIELEROS DE LA MOYA</b></h5>
                                 <h5 className="card-title" style={{ textAlign: 'justify' }}>Sinopsis: Sacarle hielo al corazón del taita Chimborazo actividad de mucho
@@ -218,7 +244,7 @@ export const EconomyScreen = () => {
                                 <h5 className="card-title">Precio: 5</h5>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
@@ -235,15 +261,15 @@ export const EconomyScreen = () => {
                     Sus ventajas son:
                 </h4>
                 <h4 style={{ textAlign: 'justify' }}>
-                    Pueden formar parte de nuestra alimentación y dieta habitual.
+                    - Pueden formar parte de nuestra alimentación y dieta habitual.
                 </h4>
                 <h4 style={{ textAlign: 'justify' }}>
-                    Además, pueden ayudarnos a completar nuestra dieta.
+                    - Además, pueden ayudarnos a completar nuestra dieta.
                 </h4> <br></br>
-                <div className="row row-cols-1 row-cols-md-4 g-4">
+                <div className="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/dulce.jpeg`} style={{ borderRadius: '40px' }}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>Tostado de dulce </b></h5>
                                 <h5 className="card-title">Precio:1 usd - 250 gr</h5>
@@ -252,7 +278,7 @@ export const EconomyScreen = () => {
                     </div>
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/fritas.jpeg`} style={{ borderRadius: '40px' }}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>Habas fritas</b></h5>
                                 <h5 className="card-title">Precio:1 usd - 250 gr</h5>
@@ -262,7 +288,7 @@ export const EconomyScreen = () => {
                     </div>
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/tostadas.jpeg`} style={{ borderRadius: '40px' }}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>Habas tostadas</b></h5>
                                 <h5 className="card-title">Precio:1 usd - 250 gr</h5>
@@ -271,7 +297,7 @@ export const EconomyScreen = () => {
                     </div>
                     <div className="col">
                         <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
+                            <img src={`./assets/img/hmachica.jpeg`} style={{ borderRadius: '40px' }}></img>
                             <div className="card-body">
                                 <h5 className="card-title"><b>Harina de Machica</b></h5>
                                 <h5 className="card-title">Molida en piedra</h5>
@@ -280,50 +306,11 @@ export const EconomyScreen = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row row-cols-1 row-cols-md-4 g-4">
-                    <div className="col">
-                        <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
-                            <div className="card-body">
-                                <h5 className="card-title"><b>Tostado de dulce </b></h5>
-                                <h5 className="card-title">Precio:1 usd - 250 gr</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
-                            <div className="card-body">
-                                <h5 className="card-title"><b>Habas fritas</b></h5>
-                                <h5 className="card-title">Precio:1 usd - 250 gr</h5>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
-                            <div className="card-body">
-                                <h5 className="card-title"><b>Habas tostadas</b></h5>
-                                <h5 className="card-title">Precio:1 usd - 250 gr</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col">
-                        <div className="card" style={{ border: "0" }}>
-                            <img src={`./assets/img/index6.jpeg`}></img>
-                            <div className="card-body">
-                                <h5 className="card-title"><b>Harina de Machica</b></h5>
-                                <h5 className="card-title">Molida en piedra</h5>
-                                <h5 className="card-title">Precio:1 usd - 250 gr</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
-            <WhatsappButtonScreen/>
-            <FooterScreen/>
+            <WhatsappButtonScreen />
+            <FooterScreen />
 
         </>
     )

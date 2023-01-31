@@ -101,6 +101,12 @@ export const IndexPack2Screen = () => {
         <div className='container' style={{ paddingTop: '5vh', paddingBottom: '5vh', paddingLeft: '10%', paddingRight: '10%' }}>
           <center><MapsScreen/></center>
         </div>
+        <br></br>
+        <br></br>
+        <h2 className='text-center' >ACEPTAMOS PAGOS CON PAYPHONE, EFECTIVO Y TRANSFERENCIA BANCARIA</h2>
+        <div className='text-center'>
+          <img src={`./assets/img/payphone.png`} width='10%' style={{ borderRadius: '0px' }}></img>
+        </div>
         <WhatsappButtonScreen/>
         <FooterScreen/>
     </>

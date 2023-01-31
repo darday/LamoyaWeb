@@ -41,9 +41,20 @@ export const ProyectosScreen = () => {
         <h1 className='text-center'>
           <b>PROYECTOS</b>
         </h1>
+        <div className='row'>
+          <div className='col-4'>
+            <img src={`./assets/images/logos/quebec.png`} style={{ paddingTop: '1.5vh' }} width='125%'></img>
+          </div>
+          <div className='col-4'>
+            <img src={`./assets/images/logos/arteNativo.png`} width='100%'></img>
+          </div>
+          <div className='col-4'>
+            <img src={`./assets/images/logos/ministerio.png`} width='100%'></img>
+          </div>
+        </div>
         <div className="textgastro13" style={{ color: '#09302b' }}>
           <h4 className='texto-pack12'>
-            La comunidad la moya con el transcurso del tiempo ha desarrollado diversos proyectos, a continuación se muestras algunos proyectos.
+            Proyectos ejecutados por la Fundación Arte Nativo en la comunidad La Moya con el apoyo del Ministerio de Relaciones Internacionales y de la Francofonia y el Centro de Solidaridad Internacional
           </h4>
         </div>
       </div>
@@ -59,7 +70,7 @@ export const ProyectosScreen = () => {
                 <img src={`./assets/images/projects/pro1.jpeg`} width='85%' style={{ borderRadius: '10vh' }}></img>
               </a>
               <div className="card-body">
-                <h5 className="card-title"><b>NQSF 2018-2022</b></h5>
+                <h5 className="card-title"><b>NQSF 2018-2023</b></h5>
                 {/* <p className="card-text">Reactivación para la autodeterminación de las mujeres de la Comunidad La Moya...</p> */}
               </div>
             </div>
@@ -100,7 +111,7 @@ export const ProyectosScreen = () => {
           <div className="col">
             <div className="card text-center" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
               <a href={"/proyecto5"}>
-              <img src={`./assets/images/projects/pro5.jpg`} width='85%' style={{ borderRadius: '10vh' }}></img>
+                <img src={`./assets/images/projects/pro5.jpg`} width='85%' style={{ borderRadius: '10vh' }}></img>
               </a>
               <div className="card-body">
                 <h5 className="card-title"><b>CLUBES DE TEATRO Y CINE EN UNIDADES EDUCATIVAS Y COMUNIDADES INDIGENAS 2007-2022</b></h5>
@@ -111,7 +122,7 @@ export const ProyectosScreen = () => {
           <div className="col">
             <div className="card text-center" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
               <a href={"/proyecto6"}>
-              <img src={`./assets/images/projects/pro6.jpg`} width='85%' style={{ borderRadius: '10vh' }}></img>
+                <img src={`./assets/images/projects/pro6.jpg`} width='85%' style={{ borderRadius: '10vh' }}></img>
               </a>
               <div className="card-body">
                 <h5 className="card-title"><b>FESTIVAL INFANTIL-JUVENIL “WAWAS AL CINE” 2017-2022</b></h5>
@@ -122,7 +133,7 @@ export const ProyectosScreen = () => {
           <div className="col">
             <div className="card text-center" style={{ border: '0', paddingLeft: '6vh', paddingRight: '6vh' }}>
               <a href={"/proyecto7"}>
-              <img src={`./assets/images/projects/pro7.jpg`} width='85%' style={{ borderRadius: '10vh' }}></img>
+                <img src={`./assets/images/projects/pro7.jpg`} width='85%' style={{ borderRadius: '10vh' }}></img>
               </a>
               <div className="card-body">
                 <h5 className="card-title"><b>REVITALIZACIÓN CULTURAL EN OZOGOCHE - 2002 - 2015: </b></h5>

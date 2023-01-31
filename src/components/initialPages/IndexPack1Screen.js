@@ -20,8 +20,8 @@ export const IndexPack1Screen = () => {
 
       <center><img src={`./assets/img/index8.png`} className='paquetedia1' width="45%" height='auto'></img></center>
 
-      <RitualScreen/>
-      
+      <RitualScreen />
+
       <br></br>
 
       <div className='container'>
@@ -89,10 +89,18 @@ export const IndexPack1Screen = () => {
                   (MÍNIMO <b>5</b> PASAJEROS)
                 </div>
               </div>
+
             </div>
           </div>
         </div>
+        <br></br>
+        <br></br>
+        <h2 className='text-center' >ACEPTAMOS PAGOS CON PAYPHONE, EFECTIVO Y TRANSFERENCIA BANCARIA</h2>
+        <div className='text-center'>
+          <img src={`./assets/img/payphone.png`} width='10%' style={{ borderRadius: '0px' }}></img>
+        </div>
       </div>
+
 
       <div className='container pp-pack1'>
         <div style={{ paddingBottom: '10vh', paddingTop: '8vh' }}>
@@ -109,10 +117,15 @@ export const IndexPack1Screen = () => {
                 <div style={{ fontSize: '2rem', color: '#09302b' }}>
                   (MÍNIMO <b>5</b> PASAJEROS)
                 </div>
+
               </div>
             </div>
           </div>
         </div>
+        <br></br>
+        <br></br>
+        <h2 className='text-center' >ACEPTAMOS PAGOS CON PAYPHONE, EFECTIVO Y TRANSFERENCIA BANCARIA</h2>
+
       </div>
 
 
@@ -130,7 +143,7 @@ export const IndexPack1Screen = () => {
           </div>
         </div>  */}
 
-      <WhatsappButtonScreen/>
+      <WhatsappButtonScreen />
 
       <FooterScreen />
 
