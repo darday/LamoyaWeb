@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavBarScreen } from '../navbar/NavBarScreen'
-import { CarouselScreen3g } from '../carousel/CarouselScreen3g';
 import { WhatsappButtonScreen } from './whatsappButton/WhatsappButtonScreen';
 import { FooterScreen } from '../footer/FooterScreen';
+import { CarouselScreen4 } from '../carousel/CarouselScreen4';
 
 export const EconomyScreen = () => {
     localStorage.removeItem("menu");
@@ -10,7 +10,7 @@ export const EconomyScreen = () => {
     return (
         <>
             <NavBarScreen />
-            <CarouselScreen3g />
+            <CarouselScreen4 />
 
             <div className='container'> <br></br><br></br>
                 <div className='texto-pack11' >
