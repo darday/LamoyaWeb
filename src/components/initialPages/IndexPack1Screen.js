@@ -26,7 +26,7 @@ export const IndexPack1Screen = () => {
 
       <div className='container'>
         {/* <center><img src= { `./assets/img/index8.png` } width="50%" height= 'auto'></img></center> */}
-        <h1 style={{ textAlign: 'center', paddingTop: '5vh', fontSize: '3rem', color: '#09302b', }}>11:00</h1>
+        <h1 style={{ textAlign: 'center', paddingTop: '5vh', fontSize: '3rem', color: '#09302b', }}>1:00 PM</h1>
         <div className='texto-pack'>Caminata al huerto de plantas medicinales,
           visita del museo, iglesia, artesanías y almuerzo,
           demostración de bocinero e hilandera.
@@ -38,7 +38,7 @@ export const IndexPack1Screen = () => {
       </div>
 
       <div className='container'>
-        <h1 style={{ textAlign: 'center', paddingTop: '10vh', fontSize: '3rem', color: '#09302b' }}>14:00</h1>
+        <h1 style={{ textAlign: 'center', paddingTop: '10vh', fontSize: '3rem', color: '#09302b' }}>16:00 PM</h1>
         <div style={{ textAlign: 'center', fontSize: '2rem', color: '#09302b' }}>FIN DE LOS SERVICIOS.</div>
         <div className='texto-pack'>Tiempos estimados dependerán del
           número de paxs.
@@ -86,7 +86,7 @@ export const IndexPack1Screen = () => {
                   <b>13 USD</b> POR PERSONA
                 </div>
                 <div style={{ fontSize: '2.5rem', color: '#09302b' }}>
-                  (MÍNIMO <b>5</b> PASAJEROS)
+                  (MÍNIMO <b>2</b> PASAJEROS)
                 </div>
               </div>
 

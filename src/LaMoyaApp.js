@@ -22,8 +22,8 @@ export const LaMoyaApp = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<IndexScreen/>}/>
-          <Route path="gastronomia" element={<GastronomiaScreen/>}/>
-          <Route path="economia" element={<EconomyScreen/>}/>
+          <Route path="restaurante" element={<GastronomiaScreen/>}/>
+          <Route path="artesania" element={<EconomyScreen/>}/>
           <Route path="cuyes" element={<CuyesScreen/>}/>
           <Route path="proyectos" element={<ProyectosScreen/>}/>
           <Route path="galeria" element={<GaleriaScreen/>}/>

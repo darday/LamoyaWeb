@@ -81,8 +81,8 @@ export const NavBarScreen = () => {
             <li><a className={`dropdown-item selection-word ${(localStorage.getItem("menu") == 4) && 'color-seleccionado'} `} href='/pack2' onClick={() => menuSeleccionado(4)} >Paquete Moya</a></li>
           </ul>
 
-          <a className={`selection-word ${(localStorage.getItem("menu") == 2) && 'color-seleccionado'} `} href='/gastronomia' onClick={() => menuSeleccionado(2)} >Gastronomia</a>
-          <a className={`selection-word ${(localStorage.getItem("menu") == 7) && 'color-seleccionado'} `} href='/economia' onClick={() => menuSeleccionado(7)} >Economía Propia</a>
+          <a className={`selection-word ${(localStorage.getItem("menu") == 2) && 'color-seleccionado'} `} href='/restaurante' onClick={() => menuSeleccionado(2)} >Restaurante</a>
+          <a className={`selection-word ${(localStorage.getItem("menu") == 7) && 'color-seleccionado'} `} href='/artesania' onClick={() => menuSeleccionado(7)} >Centro Artesanal</a>
           {/* <a className={`selection-word ${(localStorage.getItem("menu")==3)  && 'color-seleccionado'} `} href='/cuyes'  onClick={()=>menuSeleccionado(3)} >Cuyes</a>                     */}
           <a className={`selection-word ${(localStorage.getItem("menu") == 8) && 'color-seleccionado'} `} href='/proyectos' onClick={() => menuSeleccionado(8)} >Proyectos</a>
           <a className={`selection-word ${(localStorage.getItem("menu") == 5) && 'color-seleccionado'} `} href='/galeria' onClick={() => menuSeleccionado(5)} >Galeria</a>
