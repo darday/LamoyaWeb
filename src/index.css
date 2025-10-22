@@ -13,12 +13,12 @@ code {
     monospace;
 }
 
-.color-seleccionado{
-  color:#ee833b !important
+.color-seleccionado {
+  color: #ee833b !important
 }
 
 
-.imgfondo{
+.imgfondo {
   width: 100%;
   height: 100vh;
   /* display: flex; */
@@ -27,10 +27,10 @@ code {
   background: url(/public/assets/img/indexweb1.jpeg);
   /* background: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(/public/assets/img/index1a.jpeg); */
   background-size: cover;
-  background-position: center;  
+  background-position: center;
 }
 
-.imgfondoProy{
+.imgfondoProy {
   width: 100%;
   height: 50vh;
   display: flex;
@@ -39,17 +39,18 @@ code {
   background: url(/public/assets/img/indexweb1.jpeg);
   /* background: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(/public/assets/img/index1a.jpeg); */
   background-size: cover;
-  background-position: center;  
+  background-position: center;
 }
 
 
-.tittle-moya{
+.tittle-moya {
   width: 50%;
   position: absolute;
-  top:111%;
+  top: 111%;
   left: 5%;
   /* background-color: aquamarine; */
 }
+
 /* @media only screen and (max-width: 280px) {
   .tittle-moya{
     position: absolute;
@@ -65,79 +66,84 @@ code {
   }
 } */
 
-.contacts-form{
+.contacts-form {
   width: 60%;
 }
 
-.index-pp-info{
-  display: none !important;
-}
-.index-pp-visit{
+.index-pp-info {
   display: none !important;
 }
 
-.pp-pack1{
+.index-pp-visit {
   display: none !important;
 }
 
-.pp-gastronomia-menu{
+.pp-pack1 {
   display: none !important;
 }
 
-.pp-gastronomia-menu2{
+.pp-gastronomia-menu {
+  display: none !important;
+}
+
+.pp-gastronomia-menu2 {
   display: none !important;
 }
 
 /* /***********inicio responsive************** */
 @media only screen and (max-width: 820px) {
-  .index-pg-info{
-    display: none !important;
-  }
-  .index-pg-visit{
+  .index-pg-info {
     display: none !important;
   }
 
-  .index-pp-info{
-    display: flex !important;
-  }
-
-  .index-pp-visit{
-    display: flex !important;
-  }
-
-  .pg-pack1{
+  .index-pg-visit {
     display: none !important;
   }
-  .pp-pack1{
+
+  .index-pp-info {
     display: flex !important;
   }
 
-  .pg-gastronomia-menu{
+  .index-pp-visit {
+    display: flex !important;
+  }
+
+  .pg-pack1 {
     display: none !important;
   }
-  .pp-gastronomia-menu{
+
+  .pp-pack1 {
     display: flex !important;
   }
 
-  .pg-gastronomia-menu2{
+  .pg-gastronomia-menu {
     display: none !important;
   }
-  .pp-gastronomia-menu2{
+
+  .pp-gastronomia-menu {
     display: flex !important;
   }
 
-  .tittle-moya{
+  .pg-gastronomia-menu2 {
+    display: none !important;
+  }
+
+  .pp-gastronomia-menu2 {
+    display: flex !important;
+  }
+
+  .tittle-moya {
     width: 55%;
-    
-    top:40%;
+
+    top: 40%;
     left: 20%;
   }
 
-  .contacts-form{
+  .contacts-form {
     width: 100%;
   }
 
-  .textgastro{
+  .textgastro {
     font-size: 1.1rem !important;
     text-align: center !important;
     padding-top: 10vh !important;
@@ -146,25 +152,26 @@ code {
     padding-bottom: 0vh !important;
     justify-content: center;
   }
-  .textgastro1{
+
+  .textgastro1 {
     font-size: 1.7rem !important;
   }
 
-  .descargamenu{
+  .descargamenu {
     padding-top: 8vh !important;
     width: 88% !important;
   }
 
-  .texto-pack{
+  .texto-pack {
     text-align: center;
     font-size: 1.2rem !important;
-    
+
   }
 }
 
 /* /***********fin responsive************** */
 
-.texto-pack{
+.texto-pack {
   text-align: center;
   font-size: 1.7rem;
   padding-left: 15%;
@@ -173,7 +180,7 @@ code {
   color: #09302b;
 }
 
-.texto-pack11{
+.texto-pack11 {
   text-align: center;
   font-size: 1.7rem;
   padding-left: 15%;
@@ -182,7 +189,7 @@ code {
   color: #09302b;
 }
 
-.texto-pack12{
+.texto-pack12 {
   text-align: center;
   font-size: 1.7rem;
   padding-left: 15%;
@@ -191,106 +198,114 @@ code {
 }
 
 
-.centradomoya1{
+.centradomoya1 {
   color: #ffff;
   text-align: justify;
   /* width: 50%;   */
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   /* position: absolute; */
   /* top: 140%;
   right: 45%;
   padding-left: 0%;
   padding-right: 10%; */
-  font-family:dosis-medium;
+  font-family: dosis-medium;
 }
+
 @media only screen and (max-width: 800px) {
-  .centradomoya1{
+  .centradomoya1 {
     font-size: 12px;
     top: 80%;
     right: 45%;
-    font-family:dosis-medium;
+    font-family: dosis-medium;
   }
 }
 
 
-.centradomoya2{
+.centradomoya2 {
   color: #ffff;
   text-align: justify;
   /* width: 50%;   */
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   /* position: absolute; */
   /* top: 112%; */
   /* left: 50%; */
   /* padding-left: 4%; */
   /* padding-right: 5%; */
-  font-family:dosis-medium;
+  font-family: dosis-medium;
 }
+
 @media only screen and (max-width: 800px) {
-  .centradomoya2{
+  .centradomoya2 {
     font-size: 12px;
     top: 40%;
     right: 45%;
-    font-family:dosis-medium;
+    font-family: dosis-medium;
 
   }
 }
 
-a:hover.selection-word{
-  color:#ee833b !important
+a:hover.selection-word {
+  color: #ee833b !important
 }
 
-.paquetedia1{
-    position: relative;
-    top: -200px; /* ajustar los valores para mover la imagen */
-    left: -5px;    
-    display: block;
+.paquetedia1 {
+  position: relative;
+  top: -200px;
+  /* ajustar los valores para mover la imagen */
+  left: -5px;
+  display: block;
 }
+
 @media only screen and (max-width: 800px) {
-  .paquetedia1{
+  .paquetedia1 {
     font-size: 12px;
     top: 50%;
     right: 45%;
-    font-family:dosis-medium;
+    font-family: dosis-medium;
   }
 }
 
-.iconopago{
-    position: relative;
-    top: -80px; /* ajustar los valores para mover la imagen */
-    left: -5px;    
-    display: block;
+.iconopago {
+  position: relative;
+  top: -80px;
+  /* ajustar los valores para mover la imagen */
+  left: -5px;
+  display: block;
 }
 
 
-.image-visit{
-    background-color: #ffff;
-   
+.image-visit {
+  background-color: #ffff;
+
 }
-.image-visit img{
+
+.image-visit img {
   width: 100%;
   max-width: 420px;
   padding-left: 10%;
   display: block;
-  margin: auto;  
+  margin: auto;
 }
 
 
-.image-visit1{
-    background-color: #ffff;
+.image-visit1 {
+  background-color: #ffff;
 }
-.image-visit1 img{
+
+.image-visit1 img {
   width: 200%;
   max-width: 420px;
   padding-left: 10%;
   display: block;
-  margin: auto;  
+  margin: auto;
 }
 
-.pack-moya{
-    background-color: #ffff;
-   
+.pack-moya {
+  background-color: #ffff;
+
 }
-.pack-moya img{
+
+.pack-moya img {
   width: 100%;
   max-width: 420px;
   padding-left: 10%;
@@ -298,11 +313,12 @@ a:hover.selection-word{
   margin: auto;
 }
 
-.pack-moya1{
-    background-color: #ffff;
-   
+.pack-moya1 {
+  background-color: #ffff;
+
 }
-.pack-moya1 img{
+
+.pack-moya1 img {
   width: 100%;
   max-width: 420px;
   padding-left: 10%;
@@ -310,11 +326,12 @@ a:hover.selection-word{
   margin: auto;
 }
 
-.image-visit1{
-    background-color: #ffff;
-   
+.image-visit1 {
+  background-color: #ffff;
+
 }
-.image-visit1 img{
+
+.image-visit1 img {
   width: 100%;
   max-width: 420px;
   padding-left: 10%;
@@ -322,149 +339,191 @@ a:hover.selection-word{
   margin: auto;
 }
 
-.icon-visit{
+.icon-visit {
   background-color: #ffff;
- 
+
 }
-.icon-visit img{
-width: 60%;
-max-width: 420px;
-padding-left: 10%;
-display: block;
+
+.icon-visit img {
+  width: 60%;
+  max-width: 420px;
+  padding-left: 10%;
+  display: block;
   margin: auto;
 }
 
-.icon-visit1{
+.icon-visit1 {
   background-color: #ffff;
- 
+
 }
-.icon-visit1 img{
-width: 55%;
-max-width: 420px;
-padding-left: 10%;
-display: block;
+
+.icon-visit1 img {
+  width: 55%;
+  max-width: 420px;
+  padding-left: 10%;
+  display: block;
   margin: auto;
 }
 
-.icon-page{
+.icon-page {
   background-color: #ffff;
 }
 
-.icon-page img{
+.icon-page img {
   width: 30%;
   padding-top: 10vh;
   padding-bottom: 2%;
   max-width: 420px;
-  position:relative; 
+  position: relative;
   left: 55%;
-  
+
 
 }
 
-.text-page{
+.text-page {
   background-color: #ffff;
   padding-top: 18%;
-  position:relative; 
+  position: relative;
   right: 15%;
 }
 
-.paquetemoya{
+.paquetemoya {
   position: relative;
-  top: -200px; /* ajustar los valores para mover la imagen */
-  left: -5px;    
+  top: -200px;
+  /* ajustar los valores para mover la imagen */
+  left: -5px;
   display: block;
 }
+
 @media only screen and (max-width: 800px) {
-.paquetemoya{
-  font-size: 12px;
-  top: 50%;
-  right: 45%;
-  font-family:dosis-medium;
-}
+  .paquetemoya {
+    font-size: 12px;
+    top: 50%;
+    right: 45%;
+    font-family: dosis-medium;
+  }
 }
 
 @font-face {
-  font-family:dosis-light ;
+  font-family: dosis-light;
   src: url(../public/assets/fonts/DOSIS-LIGHT.TTF) format('truetype');
 }
+
 @font-face {
-  font-family:dosis-medium ;
+  font-family: dosis-medium;
   src: url(../public/assets/fonts/DOSIS-MEDIUM.TTF) format('truetype');
 }
+
 @font-face {
-  font-family:dosis-bold ;
+  font-family: dosis-bold;
   src: url(../public/assets/fonts/DOSIS-BOLD.TTF) format('truetype');
 }
+
 @font-face {
-  font-family:dosis-extra-bold ;
+  font-family: dosis-extra-bold;
   src: url(../public/assets/fonts/DOSIS-EXTRABOLD_[ALLFONT.ES].TTF) format('truetype');
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< GASTRO >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-.imgfondogastro{
+.imgfondogastro {
   width: 100%;
   height: 70vh;
   display: flex;
   background: url(/public/assets/img/gastro2.jpeg);
   /* background: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(/public/assets/img/gastro2.jpeg); */
   background-size: cover;
-  background-position: center;  
+  background-position: center;
 }
 
-.textgastro{
+.textgastro {
   color: #ffff;
   text-align: justify;
   font-size: 1.8rem;
-  font-family:dosis-medium;
+  font-family: dosis-medium;
   padding-top: 10%;
 }
 
-.textgastro1{
+.textgastro1 {
   color: #ffff;
   text-align: center;
   font-size: 2.8rem;
-  font-family:dosis-medium;
+  font-family: dosis-medium;
   padding-bottom: 10%;
 }
 
-.textgastro12{
+.textgastro12 {
   color: #ffff;
   text-align: center;
   font-size: 2.8rem;
-  font-family:dosis-medium;
+  font-family: dosis-medium;
   padding-bottom: 2%;
 }
 
-.textgastro13{
+.textgastro13 {
   color: #ffff;
   text-align: center;
   font-size: 2.8rem;
-  font-family:dosis-medium;
+  font-family: dosis-medium;
   padding-bottom: 2%;
   padding-top: 4%;
 }
 
-.descargamenu{
+.descargamenu {
   width: 50%;
   height: auto;
   padding-top: 8%;
   padding-bottom: 5%;
 }
 
-.comidas{
+.comidas {
   font-size: 1.5rem;
   padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
 }
-.comidasingles{
+
+.comidasingles {
   font-size: 1.4rem;
   color: #ad452d;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-.btn-primary{
+.btn-primary {
   background-color: #ee833b !important;
   border-color: #ee833b;
+}
+
+/* VIDEO */
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.video-container {
+  position: relative;
+  width: 95%;
+  padding-top: 53.5%;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+}
+
+/* Video ocupa todo el contenedor */
+.video-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* 🔹 En pantallas grandes, hazlo más pequeño */
+@media (min-width: 1024px) {
+  .video-container {
+    width: 60%;
+    padding-top: 34%;
+  }
 }

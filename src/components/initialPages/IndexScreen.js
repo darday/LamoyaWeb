@@ -104,7 +104,23 @@ export const IndexScreen = () => {
       {/* fin de pantalla pequenia */}
 
       <div>
-        <img src={`./assets/img/index2.jpeg`} width="100%" height='auto'></img>
+        {/* <img src={`./assets/img/index2.jpeg`} width="100%" height='auto'></img> */}
+
+        <div className="video-wrapper">
+          <div className="video-container">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/dO_p1Y0H8bc"
+              title="Video de YouTube"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
+
+
+
       </div>
 
       <div className='container'>
@@ -321,7 +337,7 @@ export const IndexScreen = () => {
 
         <center><img src= { `./assets/img/index13.png` } className='paquetemoya' width="45%" height= 'auto'></img></center>  */}
 
-      <WhatsappButtonScreen/>
+      <WhatsappButtonScreen />
       <FooterScreen />
     </>
   )
