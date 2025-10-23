@@ -527,3 +527,59 @@ a:hover.selection-word {
     padding-top: 34%;
   }
 }
+
+
+/* BOTÓN DE DESCARGA */
+
+.tours-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* sin subrayado */
+  background-color: #8b4513; /* marrón */
+  color: white; /* texto blanco */
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Evita cualquier cambio de color al pasar el mouse o enfocar el enlace */
+.tours-button:hover,
+.tours-button:focus,
+.tours-button:active,
+.tours-button:visited {
+  text-decoration: none;
+  color: white;
+  background-color: #a0522d; /* marrón más claro al hover */
+  transform: scale(1.03);
+}
+
+/* Evita contorno azul de accesibilidad (focus ring) si no lo quieres */
+.tours-button:focus {
+  outline: none;
+}
+
+.tours-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 12px;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.tours-icon p {
+  font-size: 12px;
+  margin: 2px 0 0 0;
+  font-weight: 600;
+}
+
+.tours-text {
+  font-size: 20px;
+  border-bottom: 2px solid white;
+}

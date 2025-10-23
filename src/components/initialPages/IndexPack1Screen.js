@@ -4,11 +4,24 @@ import { FooterScreen } from '../footer/FooterScreen'
 import { NavBarScreen } from '../navbar/NavBarScreen'
 import { RitualScreen } from './tours/RitualScreen'
 import { WhatsappButtonScreen } from './whatsappButton/WhatsappButtonScreen'
+import menupdf from './catalogo.pdf'
+
 
 
 export const IndexPack1Screen = () => {
   localStorage.removeItem("menu");
   window.localStorage.setItem("menu", 3);
+
+  const pdfUrl = menupdf
+
+  const handleClick = () => {
+    if (pdfUrl) {
+      window.open(pdfUrl, "_blank", "noopener,noreferrer");
+    } else {
+      console.warn("No se proporcionó una URL de PDF.");
+    }
+  };
+
   return (
     <>
       <NavBarScreen />
@@ -23,6 +36,23 @@ export const IndexPack1Screen = () => {
       <RitualScreen />
 
       <br></br>
+      <br></br>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <a
+          href={pdfUrl} // 🔗 cambia por tu PDF real
+          target="_blank"
+          rel="noopener noreferrer"
+          className="tours-button"
+        >
+          <div className="tours-icon">
+            🧭
+            <p>TOURS</p>
+          </div>
+          <span className="tours-text">MIRA TODOS NUESTROS TOURS</span>
+        </a>
+      </div>
+
+
 
       <div className='container'>
         {/* <center><img src= { `./assets/img/index8.png` } width="50%" height= 'auto'></img></center> */}
