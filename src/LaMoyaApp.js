@@ -16,6 +16,8 @@ import { Project4Screen } from './components/initialPages/projects/Project4Scree
 import { Project5Screen } from './components/initialPages/projects/Project5Screen'
 import { Project6Screen } from './components/initialPages/projects/Project6Screen'
 import { Project7Screen } from './components/initialPages/projects/Project7Screen'
+import CentroIScreen from './components/initialPages/CentroIScreen'
+import PremiosScreen from './components/initialPages/PremiosScreen'
 export const LaMoyaApp = () => {
   return (
 
@@ -37,6 +39,8 @@ export const LaMoyaApp = () => {
           <Route path="proyecto7" element={<Project7Screen/>}/>
           <Route path="pack1" element={<IndexPack1Screen/>}/>
           <Route path="pack2" element={<IndexPack2Screen/>}/>
+          <Route path="interpretacion" element={<CentroIScreen/>}/>
+          <Route path="premios" element={<PremiosScreen/>}/>
         </Routes>
       </BrowserRouter>
     )

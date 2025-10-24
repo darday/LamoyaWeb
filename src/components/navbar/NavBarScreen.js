@@ -54,6 +54,10 @@ export const NavBarScreen = () => {
         localStorage.removeItem("menu");
         window.localStorage.setItem("menu", 9);
         break;
+      case 10:
+        localStorage.removeItem("menu");
+        window.localStorage.setItem("menu", 10);
+        break;
 
       default:
         break;
@@ -86,6 +90,8 @@ export const NavBarScreen = () => {
           {/* <a className={`selection-word ${(localStorage.getItem("menu")==3)  && 'color-seleccionado'} `} href='/cuyes'  onClick={()=>menuSeleccionado(3)} >Cuyes</a>                     */}
           <a className={`selection-word ${(localStorage.getItem("menu") == 8) && 'color-seleccionado'} `} href='/proyectos' onClick={() => menuSeleccionado(8)} >Proyectos</a>
           <a className={`selection-word ${(localStorage.getItem("menu") == 5) && 'color-seleccionado'} `} href='/galeria' onClick={() => menuSeleccionado(5)} >Galeria</a>
+          <a className={`selection-word ${(localStorage.getItem("menu") == 9) && 'color-seleccionado'} `} href='/interpretacion' onClick={() => menuSeleccionado(9)} >Centro de Interpretación</a>
+          <a className={`selection-word ${(localStorage.getItem("menu") == 10) && 'color-seleccionado'} `} href='/premios' onClick={() => menuSeleccionado(10)} >Premios</a>
           <a className={`selection-word ${(localStorage.getItem("menu") == 6) && 'color-seleccionado'} `} href='/contactos' onClick={() => menuSeleccionado(6)} >Contactos</a>
 
         </div>
@@ -101,7 +107,7 @@ export const NavBarScreen = () => {
 
 const NavContainer = styled.nav`
 a{
-  font-size: 1.4rem !important;
+  font-size: 1.1rem !important;
 }
 
 h2{
